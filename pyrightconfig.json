@@ -1,0 +1,5 @@
+{
+    "ignore": [
+        "src/gui/views/generated/main_window.py"
+    ]
+}
