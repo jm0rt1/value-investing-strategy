@@ -2,3 +2,6 @@
 source ./scripts/exit-on-uncommitted-changes.sh
 
 
+source ./test.sh
+
+echo "made it"
