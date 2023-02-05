@@ -6,4 +6,5 @@ pass
 print(msft.balance_sheet)
 
 data = msft.history(period="1mo")
+
 pass
