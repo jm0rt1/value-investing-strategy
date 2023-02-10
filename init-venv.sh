@@ -4,4 +4,5 @@ source ./venv/bin/activate
 FILE=requirements.txt
 if test -f "$FILE"; then
     pip install -r requirements.txt
+    pip install -U autopep8
 fi
