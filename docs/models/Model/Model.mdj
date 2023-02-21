@@ -845,6 +845,23 @@
 											"height": 13,
 											"text": "+get_settings(self): Settings",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGGcb7gVzcRjjA=",
+											"_parent": {
+												"$ref": "AAAAAAGGEDTAEKFNRMY="
+											},
+											"model": {
+												"$ref": "AAAAAAGGcVppx3khl2c="
+											},
+											"font": "Arial;13;0",
+											"left": 368,
+											"top": 411,
+											"width": 406.48486328125,
+											"height": 13,
+											"text": "+compare_stocks(self, tickers: list<str>)",
+											"horizontalAlignment": 0
 										}
 									],
 									"visible": false,
@@ -852,7 +869,7 @@
 									"left": 363,
 									"top": 106,
 									"width": 416.48486328125,
-									"height": 308
+									"height": 323
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -13559,13 +13576,30 @@
 															"height": 13,
 															"text": "+get_settings(self): Settings",
 															"horizontalAlignment": 0
+														},
+														{
+															"_type": "UMLOperationView",
+															"_id": "AAAAAAGGcb7gYTcUotg=",
+															"_parent": {
+																"$ref": "AAAAAAGGUqziqomtTFw="
+															},
+															"model": {
+																"$ref": "AAAAAAGGcVppx3khl2c="
+															},
+															"font": "Arial;13;0",
+															"left": 1949,
+															"top": 1057,
+															"width": 406.48486328125,
+															"height": 13,
+															"text": "+compare_stocks(self, tickers: list<str>)",
+															"horizontalAlignment": 0
 														}
 													],
 													"font": "Arial;13;0",
 													"left": 1944,
 													"top": 752,
 													"width": 416.48486328125,
-													"height": 308
+													"height": 323
 												},
 												{
 													"_type": "UMLReceptionCompartmentView",
@@ -13605,7 +13639,7 @@
 											"left": 1944,
 											"top": 704,
 											"width": 416.48486328125,
-											"height": 356,
+											"height": 371,
 											"nameCompartment": {
 												"$ref": "AAAAAAGGUqziqomnpBQ="
 											},
@@ -13703,7 +13737,7 @@
 											"tail": {
 												"$ref": "AAAAAAGGIniYCoPQM0k="
 											},
-											"points": "2086:1120;2086:1059",
+											"points": "2086:1120;2086:1074",
 											"showVisibility": true,
 											"nameLabel": {
 												"$ref": "AAAAAAGGUqziq4mxfyI="
@@ -14837,7 +14871,7 @@
 									"_parent": {
 										"$ref": "AAAAAAGFN5+wWwtlaMw="
 									},
-									"name": "strategyTypes",
+									"name": "strategy_types",
 									"ownedElements": [
 										{
 											"_type": "UMLClass",
