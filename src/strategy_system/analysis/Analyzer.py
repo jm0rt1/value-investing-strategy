@@ -1,7 +1,9 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+import abc
 
-class Analyzer:
+
+class Analyzer(abc.ABC):
     def __init__(self):
         self.uid = None
 
@@ -13,4 +15,3 @@ class Analyzer:
 
     def to_csv(self, ):
         pass
-

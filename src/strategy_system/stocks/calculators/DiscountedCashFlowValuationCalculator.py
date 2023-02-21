@@ -1,15 +1,13 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from stocks.calculators.Calculator import Calculator
 
-class DiscountedCashFlowValuationCalculator(Calculator):
-    def __init__(self):
-        pass
 
-    def __init__(self, stock_ticker):
+class DiscountedCashFlowValuationCalculator(Calculator):
+
+    def __init__(self, stock_ticker: str):
         pass
 
     def run(self, ):
         pass
-

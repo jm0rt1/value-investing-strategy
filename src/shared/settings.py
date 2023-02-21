@@ -3,15 +3,7 @@
 from pathlib import Path
 
 
-def mkdir():
-    Settings.OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
-    Settings.LOGS_DIR.mkdir(exist_ok=True, parents=True)
-    Settings.GLOBAL_LOGS_DIR.mkdir(exist_ok=True, parents=True)
-    Settings.UI_LOGS_DIR.mkdir(exist_ok=True, parents=True)
-    Settings.STRATEGY_SYSTEM_LOGS_DIR.mkdir(exist_ok=True, parents=True)
-
-
-class Settings():
+class GlobalSettings():
     ##
     # Paths ---------
     APP_DIR = Path("./").resolve()
@@ -31,4 +23,8 @@ class Settings():
         GLOBAL_FILE_NAME = "global.log"
 
     # Operations
-    mkdir()
+    OUTPUT_DIR.mkdir(exist_ok=True, parents=True)
+    LOGS_DIR.mkdir(exist_ok=True, parents=True)
+    GLOBAL_LOGS_DIR.mkdir(exist_ok=True, parents=True)
+    UI_LOGS_DIR.mkdir(exist_ok=True, parents=True)
+    STRATEGY_SYSTEM_LOGS_DIR.mkdir(exist_ok=True, parents=True)

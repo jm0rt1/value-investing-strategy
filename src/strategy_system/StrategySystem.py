@@ -1,7 +1,8 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from StrategyInterface import StrategyInterface
+
 
 class StrategySystem(StrategyInterface):
     def __init__(self):
@@ -10,7 +11,7 @@ class StrategySystem(StrategyInterface):
     def __init__(self, ):
         pass
 
-    def get_stock(self, ticker):
+    def get_stock(self, ticker: str):
         pass
 
     def get_QFAStrategy(self, uid):
@@ -18,4 +19,3 @@ class StrategySystem(StrategyInterface):
 
     def get_RebalancingStrategy(self, uid):
         pass
-

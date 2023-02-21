@@ -1,5 +1,5 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 class StrategyInterface:
     def __init__(self):
@@ -17,10 +17,10 @@ class StrategyInterface:
     def reset(self, ):
         pass
 
-    def calculate_graham_number(self, ticker):
+    def calculate_graham_number(self, ticker: str):
         pass
 
-    def calculate_book_value_dividend_projections_valuation(self, ticker):
+    def calculate_book_value_dividend_projections_valuation(self, ticker: str):
         pass
 
     def compare_qfa(self, tickers):
@@ -29,19 +29,19 @@ class StrategyInterface:
     def save_qfa(self, analysis_to_save):
         pass
 
-    def calculate_graham_number(self, ticker):
+    def calculate_graham_number(self, ticker: str):
         pass
 
-    def calculate_discounted_cash_flow_valuation(self, ticker):
+    def calculate_discounted_cash_flow_valuation(self, ticker: str):
         pass
 
-    def calculate_asset_based_valuation(self, ticker):
+    def calculate_asset_based_valuation(self, ticker: str):
         pass
 
-    def calculator_financial_metric_analysis(self, ticker):
+    def calculator_financial_metric_analysis(self, ticker: str):
         pass
 
-    def calculate_financial_metric_analysis_valuation(self, ticker):
+    def calculate_financial_metric_analysis_valuation(self, ticker: str):
         pass
 
     def generate_qf_analysis(self, ):
@@ -67,4 +67,3 @@ class StrategyInterface:
 
     def compare_stocks(self, tickers):
         pass
-

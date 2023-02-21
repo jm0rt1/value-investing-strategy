@@ -1,7 +1,8 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from stocks.calculators.Calculator import Calculator
+
 
 class SharpeRatioCalculator(Calculator):
     """
@@ -20,14 +21,14 @@ class SharpeRatioCalculator(Calculator):
 
     It's worth noting that the Sharpe ratio has some limitations and assumptions, including the assumption that investment returns follow a normal distribution, and the fact that it only measures risk relative to the risk-free rate and does not account for other types of risk (such as market risk or liquidity risk). Nonetheless, it is a widely used and respected measure of risk-adjusted performance in finance.
     """
+
     def __init__(self):
         self.Rp = None
         self.Rf = None
         self.sigma_p = None
 
-    def __init__(self, stock_ticker):
+    def __init__(self, stock_ticker: str):
         pass
 
     def run(self, ):
         pass
-

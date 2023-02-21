@@ -1,15 +1,14 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from stocks.calculators.Calculator import Calculator
 
-class GrahamNumberCalculator(Calculator):
-    def __init__(self):
-        pass
 
-    def __init__(self, stock_ticker):
+class GrahamNumberCalculator(Calculator):
+
+
+    def __init__(self, stock_ticker: str):
         pass
 
     def run(self, ):
         pass
-

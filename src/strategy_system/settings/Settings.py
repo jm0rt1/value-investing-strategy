@@ -1,17 +1,18 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+from pathlib import Path
+from src.shared.settings import GlobalSettings
+
 
 class Settings:
-    def __init__(self):
-        self.log_dir = None
-        self.output_dir = None
-        self.uid = None
-        self.Attribute4 = None
-        self.Attribute5 = None
+
+    class LoggingParams():
+        LOG_FILE_NAME = "strategy.log"
+        LOG_FILE_PATH = GlobalSettings.STRATEGY_SYSTEM_LOGS_DIR/LOG_FILE_NAME
+        BACKUP_COUNT = 20
 
     def __init__(self, ):
         pass
 
-    def load(self, path):
+    def load(self, path: Path):
         pass
-

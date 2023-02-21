@@ -1,7 +1,4 @@
 {
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
     "python.languageServer": "Pylance",
     "editor.formatOnSave": true,
     "python.analysis.typeCheckingMode": "strict",
@@ -15,4 +12,13 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "jupyter.debugJustMyCode": false,
     "files.autoSave": "onFocusChange",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "*test*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
 }
