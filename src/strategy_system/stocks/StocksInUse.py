@@ -1,5 +1,4 @@
 
-# -*- coding: utf-8 -*-
 
 class StocksInUse:
     def __init__(self):

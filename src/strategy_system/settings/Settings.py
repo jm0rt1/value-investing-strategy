@@ -1,5 +1,5 @@
 
-# -*- coding: utf-8 -*-
+
 from pathlib import Path
 from src.shared.settings import GlobalSettings
 

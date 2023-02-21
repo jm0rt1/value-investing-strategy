@@ -1,5 +1,5 @@
+# type:ignore
 
-# -*- coding: utf-8 -*-
 from src.strategy_system.stocks.stock.Stock import Stock
 
 

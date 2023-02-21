@@ -1,5 +1,4 @@
 
-# -*- coding: utf-8 -*-
 
 class StrategyInterface:
     def __init__(self):

@@ -1,5 +1,4 @@
-
-# -*- coding: utf-8 -*-
+# type:ignore
 
 from stocks.calculators.Calculator import Calculator
 

@@ -1,6 +1,7 @@
 
-# -*- coding: utf-8 -*-
+
 from src.strategy_system.stocks.components import IncomeStatement, EarningsReport, BalanceSheet, CashFlow, CompanyOverview
+from src.strategy_system.stocks.calculators import SharpeRatioCalculator
 
 
 class Stock:
