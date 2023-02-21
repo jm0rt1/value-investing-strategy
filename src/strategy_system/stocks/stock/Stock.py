@@ -7,7 +7,7 @@ class Stock:
         self.symbol = None
         self.intrinsic_value = None
 
-    def __init__(self, self, ticker):
+    def __init__(self, ticker):
         pass
 
     def from_alpha_vantage_data(self, income_statement, earnings, balance_sheet, cash_flow, company_overview):

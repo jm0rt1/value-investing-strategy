@@ -6,6 +6,6 @@ class RebalancingAnalyzerSettings:
         self.ticker_values = None
         self.uid = None
 
-    def __init__(self, self):
+    def __init__(self, ):
         pass
 

@@ -7,9 +7,9 @@ class AssetBasedValuationCalculator(Calculator):
     def __init__(self):
         pass
 
-    def __init__(self, self, stock_ticker):
+    def __init__(self, stock_ticker):
         pass
 
-    def run(self, self):
+    def run(self, ):
         pass
 

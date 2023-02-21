@@ -25,9 +25,9 @@ class SharpeRatioCalculator(Calculator):
         self.Rf = None
         self.sigma_p = None
 
-    def __init__(self, self, stock_ticker):
+    def __init__(self, stock_ticker):
         pass
 
-    def run(self, self):
+    def run(self, ):
         pass
 

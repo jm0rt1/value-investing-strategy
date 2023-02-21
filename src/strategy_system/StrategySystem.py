@@ -7,7 +7,7 @@ class StrategySystem(StrategyInterface):
     def __init__(self):
         self.Attribute1 = None
 
-    def __init__(self, self):
+    def __init__(self, ):
         pass
 
     def get_stock(self, ticker):

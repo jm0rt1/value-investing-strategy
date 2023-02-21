@@ -5,10 +5,10 @@ class Analyzer:
     def __init__(self):
         self.uid = None
 
-    def run(self, self):
+    def run(self, ):
         pass
 
-    def save(self, self):
+    def save(self, ):
         pass
 
     def to_csv(self, ):

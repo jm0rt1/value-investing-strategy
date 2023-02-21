@@ -8,12 +8,12 @@ class RebalancingParamSettings:
     def add_analyzer_settings(self, settings):
         pass
 
-    def __init__(self, self):
+    def __init__(self, ):
         pass
 
-    def get_settings(self, self):
+    def get_settings(self, ):
         pass
 
-    def load(self, cls, path):
+    def load(self, path):
         pass
 

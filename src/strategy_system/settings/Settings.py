@@ -9,9 +9,9 @@ class Settings:
         self.Attribute4 = None
         self.Attribute5 = None
 
-    def __init__(self, self):
+    def __init__(self, ):
         pass
 
-    def load(self, cls, path):
+    def load(self, path):
         pass
 

@@ -8,63 +8,63 @@ class StrategyInterface:
     def __init__(self, ):
         pass
 
-    def run(self, self):
+    def run(self, ):
         pass
 
-    def initialize(self, self):
+    def initialize(self, ):
         pass
 
-    def reset(self, self):
+    def reset(self, ):
         pass
 
-    def calculate_graham_number(self, self, ticker):
+    def calculate_graham_number(self, ticker):
         pass
 
-    def calculate_book_value_dividend_projections_valuation(self, self, ticker):
+    def calculate_book_value_dividend_projections_valuation(self, ticker):
         pass
 
-    def compare_qfa(self, self, tickers):
+    def compare_qfa(self, tickers):
         pass
 
-    def save_qfa(self, self, analysis_to_save):
+    def save_qfa(self, analysis_to_save):
         pass
 
-    def calculate_graham_number(self, self, ticker):
+    def calculate_graham_number(self, ticker):
         pass
 
-    def calculate_discounted_cash_flow_valuation(self, self, ticker):
+    def calculate_discounted_cash_flow_valuation(self, ticker):
         pass
 
-    def calculate_asset_based_valuation(self, self, ticker):
+    def calculate_asset_based_valuation(self, ticker):
         pass
 
-    def calculator_financial_metric_analysis(self, self, ticker):
+    def calculator_financial_metric_analysis(self, ticker):
         pass
 
-    def calculate_financial_metric_analysis_valuation(self, self, ticker):
+    def calculate_financial_metric_analysis_valuation(self, ticker):
         pass
 
-    def generate_qf_analysis(self, self):
+    def generate_qf_analysis(self, ):
         pass
 
-    def generate_rebalancing_analysis(self, self):
+    def generate_rebalancing_analysis(self, ):
         pass
 
-    def add_rebalancing_dataflow(self, self, analyzer):
+    def add_rebalancing_dataflow(self, analyzer):
         pass
 
-    def add_qfa_dataflow(self, self, analyzer):
+    def add_qfa_dataflow(self, analyzer):
         pass
 
-    def run_rebalance(self, self, uid):
+    def run_rebalance(self, uid):
         pass
 
-    def run_qfa(self, self, uid):
+    def run_qfa(self, uid):
         pass
 
-    def get_settings(self, self):
+    def get_settings(self, ):
         pass
 
-    def compare_stocks(self, self, tickers):
+    def compare_stocks(self, tickers):
         pass
 

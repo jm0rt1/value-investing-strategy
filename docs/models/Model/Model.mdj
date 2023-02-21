@@ -2209,7 +2209,7 @@
 															"top": 1871,
 															"width": 201.25244140625,
 															"height": 13,
-															"text": "+__init__(self)",
+															"text": "+__init__()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -2382,7 +2382,7 @@
 															"top": 1838,
 															"width": 261.21875,
 															"height": 13,
-															"text": "(from strategyTypes)"
+															"text": "(from strategy_types)"
 														},
 														{
 															"_type": "LabelView",
@@ -3099,7 +3099,7 @@
 															"top": 2536,
 															"width": 177.404296875,
 															"height": 13,
-															"text": "+__init__(self: Settings)",
+															"text": "+__init__()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -3116,7 +3116,7 @@
 															"top": 2551,
 															"width": 177.404296875,
 															"height": 13,
-															"text": "+load(cls: Settings, path: Path)",
+															"text": "+load(path: Path)",
 															"horizontalAlignment": 0
 														}
 													],
@@ -3787,7 +3787,7 @@
 															"top": 2182,
 															"width": 368.189453125,
 															"height": 13,
-															"text": "+__init__(self: RebalancingParamSettings)",
+															"text": "+__init__()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -3804,7 +3804,7 @@
 															"top": 2197,
 															"width": 368.189453125,
 															"height": 13,
-															"text": "+get_settings(self: RebalancingParamSettings)",
+															"text": "+get_settings()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -3821,7 +3821,7 @@
 															"top": 2212,
 															"width": 368.189453125,
 															"height": 13,
-															"text": "+load(cls: RebalancingParamSettings, path: Path)",
+															"text": "+load(path: Path)",
 															"horizontalAlignment": 0
 														}
 													],
@@ -4485,7 +4485,7 @@
 															"top": 1854,
 															"width": 316.15771484375,
 															"height": 13,
-															"text": "(from strategyTypes)"
+															"text": "(from strategy_types)"
 														},
 														{
 															"_type": "LabelView",
@@ -6188,7 +6188,7 @@
 															"top": 1265,
 															"width": 175,
 															"height": 13,
-															"text": "+run(self)",
+															"text": "+run()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6205,7 +6205,7 @@
 															"top": 1280,
 															"width": 175,
 															"height": 13,
-															"text": "+save(self)",
+															"text": "+save()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6537,7 +6537,7 @@
 															"top": 1478,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+run(self)",
+															"text": "+run()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6555,7 +6555,7 @@
 															"top": 1493,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+initialize(self)",
+															"text": "+initialize()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6573,7 +6573,7 @@
 															"top": 1508,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+reset(self)",
+															"text": "+reset()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6591,7 +6591,7 @@
 															"top": 1523,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_graham_number(self, ticker: str)",
+															"text": "+calculate_graham_number(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6609,7 +6609,7 @@
 															"top": 1538,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_book_value_dividend_projections_valuation(self, ticker: str)",
+															"text": "+calculate_book_value_dividend_projections_valuation(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6627,7 +6627,7 @@
 															"top": 1553,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+compare_qfa(self, tickers: list<str>)",
+															"text": "+compare_qfa(tickers: list<str>)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6646,7 +6646,7 @@
 															"top": 1520,
 															"width": 374.7021484375,
 															"height": 13,
-															"text": "+save_qfa(self, analysis_to_save: QFAnalyzer)",
+															"text": "+save_qfa(analysis_to_save: QFAnalyzer)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6664,7 +6664,7 @@
 															"top": 1568,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_graham_number(self, ticker: str)",
+															"text": "+calculate_graham_number(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6682,7 +6682,7 @@
 															"top": 1583,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_discounted_cash_flow_valuation(self, ticker: str)",
+															"text": "+calculate_discounted_cash_flow_valuation(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6700,7 +6700,7 @@
 															"top": 1598,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_asset_based_valuation(self, ticker: str)",
+															"text": "+calculate_asset_based_valuation(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6718,7 +6718,7 @@
 															"top": 1613,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculator_financial_metric_analysis(self, ticker: str)",
+															"text": "+calculator_financial_metric_analysis(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6736,7 +6736,7 @@
 															"top": 1628,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_financial_metric_analysis_valuation(self, ticker: str)",
+															"text": "+calculate_financial_metric_analysis_valuation(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6754,7 +6754,7 @@
 															"top": 1643,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+generate_qf_analysis(self): QFAnalyzer",
+															"text": "+generate_qf_analysis(): QFAnalyzer",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6772,7 +6772,7 @@
 															"top": 1658,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+generate_rebalancing_analysis(self): RebalancingAnalyzer",
+															"text": "+generate_rebalancing_analysis(): RebalancingAnalyzer",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6790,7 +6790,7 @@
 															"top": 1673,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+add_rebalancing_dataflow(self, analyzer: RebalancingAnalyzer)",
+															"text": "+add_rebalancing_dataflow(analyzer: RebalancingAnalyzer)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6808,7 +6808,7 @@
 															"top": 1688,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+add_qfa_dataflow(self, analyzer: QFAnalyzer)",
+															"text": "+add_qfa_dataflow(analyzer: QFAnalyzer)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6826,7 +6826,7 @@
 															"top": 1703,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+run_rebalance(self, uid: str)",
+															"text": "+run_rebalance(uid: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6844,7 +6844,7 @@
 															"top": 1718,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+run_qfa(self, uid: str)",
+															"text": "+run_qfa(uid: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6862,7 +6862,7 @@
 															"top": 1733,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+get_settings(self): Settings",
+															"text": "+get_settings(): Settings",
 															"horizontalAlignment": 0
 														},
 														{
@@ -6880,7 +6880,7 @@
 															"top": 1748,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+compare_stocks(self, tickers: list<str>)",
+															"text": "+compare_stocks(tickers: list<str>)",
 															"horizontalAlignment": 0
 														}
 													],
@@ -8491,7 +8491,7 @@
 															"top": 2194,
 															"width": 259.06689453125,
 															"height": 13,
-															"text": "+__init__(self: RebalancingAnalyzerSettings)",
+															"text": "+__init__()",
 															"horizontalAlignment": 0
 														}
 													],
@@ -11028,18 +11028,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGGEAlj14JCBRk="
 											},
-											"name": "__init__",
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGRsEW/pWzEH4=",
-													"_parent": {
-														"$ref": "AAAAAAGGRsD7S5P8xtE="
-													},
-													"name": "self",
-													"type": ""
-												}
-											]
+											"name": "__init__"
 										},
 										{
 											"_type": "UMLOperation",
@@ -11134,18 +11123,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGGEC6aYm7iRss="
 											},
-											"name": "run",
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGRg+SMidXtJs=",
-													"_parent": {
-														"$ref": "AAAAAAGGIi1YqrTpdN0="
-													},
-													"name": "self",
-													"type": ""
-												}
-											]
+											"name": "run"
 										},
 										{
 											"_type": "UMLOperation",
@@ -11153,18 +11131,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGGEC6aYm7iRss="
 											},
-											"name": "initialize",
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGRg+J+CS0pqE=",
-													"_parent": {
-														"$ref": "AAAAAAGGIi11vLeEmzU="
-													},
-													"name": "self",
-													"type": ""
-												}
-											]
+											"name": "initialize"
 										},
 										{
 											"_type": "UMLOperation",
@@ -11172,18 +11139,7 @@
 											"_parent": {
 												"$ref": "AAAAAAGGEC6aYm7iRss="
 											},
-											"name": "reset",
-											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGRg97oyGB3eM=",
-													"_parent": {
-														"$ref": "AAAAAAGGIi4LKMPIXNo="
-													},
-													"name": "self",
-													"type": ""
-												}
-											]
+											"name": "reset"
 										},
 										{
 											"_type": "UMLOperation",
@@ -11193,15 +11149,6 @@
 											},
 											"name": "calculate_graham_number",
 											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGRgYRunxfmNk=",
-													"_parent": {
-														"$ref": "AAAAAAGGRgSLaZZDZjQ="
-													},
-													"name": "self",
-													"type": ""
-												},
 												{
 													"_type": "UMLParameter",
 													"_id": "AAAAAAGGRg8/ZBV1lOk=",
@@ -11223,15 +11170,6 @@
 											"parameters": [
 												{
 													"_type": "UMLParameter",
-													"_id": "AAAAAAGGRgjQBFWZ6Gs=",
-													"_parent": {
-														"$ref": "AAAAAAGGRghsMkKV9Bg="
-													},
-													"name": "self",
-													"type": ""
-												},
-												{
-													"_type": "UMLParameter",
 													"_id": "AAAAAAGGRg9tph5+r3k=",
 													"_parent": {
 														"$ref": "AAAAAAGGRghsMkKV9Bg="
@@ -11251,15 +11189,6 @@
 											"parameters": [
 												{
 													"_type": "UMLParameter",
-													"_id": "AAAAAAGGRgpUwVg8y/Q=",
-													"_parent": {
-														"$ref": "AAAAAAGGRghwwURLIqc="
-													},
-													"name": "self",
-													"type": ""
-												},
-												{
-													"_type": "UMLParameter",
 													"_id": "AAAAAAGGRg9e+ht7i10=",
 													"_parent": {
 														"$ref": "AAAAAAGGRghwwURLIqc="
@@ -11277,15 +11206,6 @@
 											},
 											"name": "save_qfa",
 											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGRg0l+Ph/uJQ=",
-													"_parent": {
-														"$ref": "AAAAAAGGRghzU0YBnp4="
-													},
-													"name": "self",
-													"type": ""
-												},
 												{
 													"_type": "UMLParameter",
 													"_id": "AAAAAAGGRg9OUxh4fag=",
@@ -11309,15 +11229,6 @@
 											"parameters": [
 												{
 													"_type": "UMLParameter",
-													"_id": "AAAAAAGGRg8/KxSw7xM=",
-													"_parent": {
-														"$ref": "AAAAAAGGRg8MGxF5KLA="
-													},
-													"name": "self",
-													"type": ""
-												},
-												{
-													"_type": "UMLParameter",
 													"_id": "AAAAAAGGRg8/KxSxPCU=",
 													"_parent": {
 														"$ref": "AAAAAAGGRg8MGxF5KLA="
@@ -11335,15 +11246,6 @@
 											},
 											"name": "calculate_discounted_cash_flow_valuation",
 											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb2REjZl93/M=",
-													"_parent": {
-														"$ref": "AAAAAAGGb2PtYJfhIEA="
-													},
-													"name": "self",
-													"type": ""
-												},
 												{
 													"_type": "UMLParameter",
 													"_id": "AAAAAAGGb2REjZl+srs=",
@@ -11365,15 +11267,6 @@
 											"parameters": [
 												{
 													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb2OtXItcPnA=",
-													"_parent": {
-														"$ref": "AAAAAAGGb2NMZ4nA/oU="
-													},
-													"name": "self",
-													"type": ""
-												},
-												{
-													"_type": "UMLParameter",
 													"_id": "AAAAAAGGb2OtXItdBKk=",
 													"_parent": {
 														"$ref": "AAAAAAGGb2NMZ4nA/oU="
@@ -11393,15 +11286,6 @@
 											"parameters": [
 												{
 													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb2cJH8Sml+Q=",
-													"_parent": {
-														"$ref": "AAAAAAGGb2aSp8Kv+0Y="
-													},
-													"name": "self",
-													"type": ""
-												},
-												{
-													"_type": "UMLParameter",
 													"_id": "AAAAAAGGb2cJH8SnLhs=",
 													"_parent": {
 														"$ref": "AAAAAAGGb2aSp8Kv+0Y="
@@ -11419,15 +11303,6 @@
 											},
 											"name": "calculate_financial_metric_analysis_valuation",
 											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb2rvCdOEpmQ=",
-													"_parent": {
-														"$ref": "AAAAAAGGb2qxUdHoNvc="
-													},
-													"name": "self",
-													"type": ""
-												},
 												{
 													"_type": "UMLParameter",
 													"_id": "AAAAAAGGb3JvPypdScQ=",
@@ -11468,15 +11343,6 @@
 														"$ref": "AAAAAAGGIhvz9hkl1GA="
 													},
 													"direction": "return"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb2sPP9h22XM=",
-													"_parent": {
-														"$ref": "AAAAAAGGUqUbdf0Uxfc="
-													},
-													"name": "self",
-													"type": ""
 												}
 											]
 										},
@@ -11498,15 +11364,6 @@
 														"$ref": "AAAAAAGGECWc54Wylyg="
 													},
 													"direction": "return"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb2r779X9PCs=",
-													"_parent": {
-														"$ref": "AAAAAAGGZOQ01DfHJLQ="
-													},
-													"name": "self",
-													"type": ""
 												}
 											]
 										},
@@ -11518,15 +11375,6 @@
 											},
 											"name": "add_rebalancing_dataflow",
 											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb1+rQdKK5ec=",
-													"_parent": {
-														"$ref": "AAAAAAGGRhC7alZqwAQ="
-													},
-													"name": "self",
-													"type": ""
-												},
 												{
 													"_type": "UMLParameter",
 													"_id": "AAAAAAGGb1+rQdKL51M=",
@@ -11550,15 +11398,6 @@
 											"parameters": [
 												{
 													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb1/grdUyXhE=",
-													"_parent": {
-														"$ref": "AAAAAAGGRhWcmCUjqeo="
-													},
-													"name": "self",
-													"type": ""
-												},
-												{
-													"_type": "UMLParameter",
 													"_id": "AAAAAAGGb1/grtUzBcY=",
 													"_parent": {
 														"$ref": "AAAAAAGGRhWcmCUjqeo="
@@ -11580,15 +11419,6 @@
 											"parameters": [
 												{
 													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb2srk91oXwU=",
-													"_parent": {
-														"$ref": "AAAAAAGGRhaN6W6ASYo="
-													},
-													"name": "self",
-													"type": ""
-												},
-												{
-													"_type": "UMLParameter",
 													"_id": "AAAAAAGGb2uCnOJXTrQ=",
 													"_parent": {
 														"$ref": "AAAAAAGGRhaN6W6ASYo="
@@ -11606,15 +11436,6 @@
 											},
 											"name": "run_qfa",
 											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb2vm3OgtTlE=",
-													"_parent": {
-														"$ref": "AAAAAAGGb2unsOaRLXQ="
-													},
-													"name": "self",
-													"type": ""
-												},
 												{
 													"_type": "UMLParameter",
 													"_id": "AAAAAAGGb2vm3OguL28=",
@@ -11644,15 +11465,6 @@
 														"$ref": "AAAAAAGGEA1SUY0U3Ow="
 													},
 													"direction": "return"
-												},
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGb2sd+trveLk=",
-													"_parent": {
-														"$ref": "AAAAAAGGUqLKrZA7Mi4="
-													},
-													"name": "self",
-													"type": ""
 												}
 											]
 										},
@@ -11664,15 +11476,6 @@
 											},
 											"name": "compare_stocks",
 											"parameters": [
-												{
-													"_type": "UMLParameter",
-													"_id": "AAAAAAGGcVq+i3q9hQ4=",
-													"_parent": {
-														"$ref": "AAAAAAGGcVppx3khl2c="
-													},
-													"name": "self",
-													"type": ""
-												},
 												{
 													"_type": "UMLParameter",
 													"_id": "AAAAAAGGcVq+i3q+B6A=",
@@ -13925,20 +13728,7 @@
 													"_parent": {
 														"$ref": "AAAAAAGGEA1SUY0U3Ow="
 													},
-													"name": "__init__",
-													"parameters": [
-														{
-															"_type": "UMLParameter",
-															"_id": "AAAAAAGGZOlqkRvxAEE=",
-															"_parent": {
-																"$ref": "AAAAAAGGIjvgeveEdZc="
-															},
-															"name": "self",
-															"type": {
-																"$ref": "AAAAAAGGEA1SUY0U3Ow="
-															}
-														}
-													]
+													"name": "__init__"
 												},
 												{
 													"_type": "UMLOperation",
@@ -13948,17 +13738,6 @@
 													},
 													"name": "load",
 													"parameters": [
-														{
-															"_type": "UMLParameter",
-															"_id": "AAAAAAGGZOkO2RG4UPQ=",
-															"_parent": {
-																"$ref": "AAAAAAGGZOj11hAcVYM="
-															},
-															"name": "cls",
-															"type": {
-																"$ref": "AAAAAAGGEA1SUY0U3Ow="
-															}
-														},
 														{
 															"_type": "UMLParameter",
 															"_id": "AAAAAAGGZOkpVBQxUOY=",
@@ -14073,20 +13852,7 @@
 													"_parent": {
 														"$ref": "AAAAAAGGEA9QxJpQWPQ="
 													},
-													"name": "__init__",
-													"parameters": [
-														{
-															"_type": "UMLParameter",
-															"_id": "AAAAAAGGZOnEjUH3rAE=",
-															"_parent": {
-																"$ref": "AAAAAAGGIjvOQvJoxog="
-															},
-															"name": "self",
-															"type": {
-																"$ref": "AAAAAAGGEA9QxJpQWPQ="
-															}
-														}
-													]
+													"name": "__init__"
 												},
 												{
 													"_type": "UMLOperation",
@@ -14094,20 +13860,7 @@
 													"_parent": {
 														"$ref": "AAAAAAGGEA9QxJpQWPQ="
 													},
-													"name": "get_settings",
-													"parameters": [
-														{
-															"_type": "UMLParameter",
-															"_id": "AAAAAAGGZOocnVEZcwM=",
-															"_parent": {
-																"$ref": "AAAAAAGGZLcI5lC9wbI="
-															},
-															"name": "self",
-															"type": {
-																"$ref": "AAAAAAGGEA9QxJpQWPQ="
-															}
-														}
-													]
+													"name": "get_settings"
 												},
 												{
 													"_type": "UMLOperation",
@@ -14117,17 +13870,6 @@
 													},
 													"name": "load",
 													"parameters": [
-														{
-															"_type": "UMLParameter",
-															"_id": "AAAAAAGGZOmbAThHBbA=",
-															"_parent": {
-																"$ref": "AAAAAAGGZOl8JTar+Vk="
-															},
-															"name": "cls",
-															"type": {
-																"$ref": "AAAAAAGGEA9QxJpQWPQ="
-															}
-														},
 														{
 															"_type": "UMLParameter",
 															"_id": "AAAAAAGGZOmbAjhIVDs=",
@@ -14513,20 +14255,7 @@
 													"_parent": {
 														"$ref": "AAAAAAGGIipIikU03ac="
 													},
-													"name": "__init__",
-													"parameters": [
-														{
-															"_type": "UMLParameter",
-															"_id": "AAAAAAGGZOpc+1kyEb4=",
-															"_parent": {
-																"$ref": "AAAAAAGGIjvALvC0QLI="
-															},
-															"name": "self",
-															"type": {
-																"$ref": "AAAAAAGGIipIikU03ac="
-															}
-														}
-													]
+													"name": "__init__"
 												}
 											]
 										}
@@ -14808,18 +14537,7 @@
 													"_parent": {
 														"$ref": "AAAAAAGGECyAOk0g1Z8="
 													},
-													"name": "run",
-													"parameters": [
-														{
-															"_type": "UMLParameter",
-															"_id": "AAAAAAGGRsAbogoBbtE=",
-															"_parent": {
-																"$ref": "AAAAAAGGEC1kAWkxNzU="
-															},
-															"name": "self",
-															"type": ""
-														}
-													]
+													"name": "run"
 												},
 												{
 													"_type": "UMLOperation",
@@ -14827,18 +14545,7 @@
 													"_parent": {
 														"$ref": "AAAAAAGGECyAOk0g1Z8="
 													},
-													"name": "save",
-													"parameters": [
-														{
-															"_type": "UMLParameter",
-															"_id": "AAAAAAGGb2EDVjULjhU=",
-															"_parent": {
-																"$ref": "AAAAAAGGb2D2ITNvGp4="
-															},
-															"name": "self",
-															"type": ""
-														}
-													]
+													"name": "save"
 												},
 												{
 													"_type": "UMLOperation",
@@ -25121,17 +24828,6 @@
 															"parameters": [
 																{
 																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGKUmq6JN+IMw=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGKUDAwrSFkhw="
-																	},
-																	"name": "self",
-																	"type": {
-																		"$ref": "AAAAAAGGKRhkRQtwKYI="
-																	}
-																},
-																{
-																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGKUmq6ZN/GGo=",
 																	"_parent": {
 																		"$ref": "AAAAAAGGKUDAwrSFkhw="
@@ -25502,15 +25198,6 @@
 															"parameters": [
 																{
 																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGI4m6odc14Nc=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGI4m6odc0z4M="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
-																{
-																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGRroI1u2zomA=",
 																	"_parent": {
 																		"$ref": "AAAAAAGGI4m6odc0z4M="
@@ -25528,15 +25215,6 @@
 															},
 															"name": "run",
 															"parameters": [
-																{
-																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGRrrhTgVgw3I=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGI4nEJtc60RQ="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
 																{
 																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGalfuUlgQhIk=",
@@ -25583,15 +25261,6 @@
 															"parameters": [
 																{
 																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGalKPJVcjjNA=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGalJw5VccGMU="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
-																{
-																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGalKPJVckuus=",
 																	"_parent": {
 																		"$ref": "AAAAAAGGalJw5VccGMU="
@@ -25609,15 +25278,6 @@
 															},
 															"name": "run",
 															"parameters": [
-																{
-																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGRrq2xP9am/0=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGRolU0/ZB8p4="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
 																{
 																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGalfUI1gKuMg=",
@@ -27805,15 +27465,6 @@
 															"parameters": [
 																{
 																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGalJmClcYzqU=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGalJCtFcR7/c="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
-																{
-																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGalJmClcZqCA=",
 																	"_parent": {
 																		"$ref": "AAAAAAGGalJCtFcR7/c="
@@ -27831,15 +27482,6 @@
 															},
 															"name": "run",
 															"parameters": [
-																{
-																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGalIjXlcPqjM=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGalIAElcIRJk="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
 																{
 																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGalfJUFgH+O0=",
@@ -27886,15 +27528,6 @@
 															"parameters": [
 																{
 																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGalcX+lfUyGM=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGalcX+lfTQ4g="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
-																{
-																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGalcX+lfVXQA=",
 																	"_parent": {
 																		"$ref": "AAAAAAGGalcX+lfTQ4g="
@@ -27912,15 +27545,6 @@
 															},
 															"name": "run",
 															"parameters": [
-																{
-																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGalcgaVfgxH4=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGalcgaVffhvc="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
 																{
 																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGalewO1gERJA=",
@@ -27967,15 +27591,6 @@
 															"parameters": [
 																{
 																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGalc+wFf1I5I=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGalc+wFf0ATg="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
-																{
-																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGalc+wFf2XxQ=",
 																	"_parent": {
 																		"$ref": "AAAAAAGGalc+wFf0ATg="
@@ -27993,15 +27608,6 @@
 															},
 															"name": "run",
 															"parameters": [
-																{
-																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGalc2v1fqIPI=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGalc2v1fpTlU="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
 																{
 																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGalf5kVgT3UQ=",
@@ -28078,15 +27684,6 @@
 															"parameters": [
 																{
 																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGcQKRJ6kos/E=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGcQKRJ6kn3kw="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
-																{
-																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGcQKRJ6kpJaI=",
 																	"_parent": {
 																		"$ref": "AAAAAAGGcQKRJ6kn3kw="
@@ -28104,15 +27701,6 @@
 															},
 															"name": "run",
 															"parameters": [
-																{
-																	"_type": "UMLParameter",
-																	"_id": "AAAAAAGGcQKghak194M=",
-																	"_parent": {
-																		"$ref": "AAAAAAGGcQKghak0ay0="
-																	},
-																	"name": "self",
-																	"type": ""
-																},
 																{
 																	"_type": "UMLParameter",
 																	"_id": "AAAAAAGGcQKghak2ImY=",
