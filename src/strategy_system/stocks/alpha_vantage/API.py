@@ -1,13 +1,19 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+from abc import ABC
+from pathlib import Path
 
-class API:
-    def __init__(self):
+
+class API(ABC):
+
+    @classmethod
+    def print_json(cls, symbol: str):
         pass
 
-    def print_json(self, ):
+    @classmethod
+    def json_file(cls, symbol: str, path: Path):
         pass
 
-    def to_dict(self, ):
+    @classmethod
+    def to_dict(symbol: str):
         pass
-
