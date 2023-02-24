@@ -4,3 +4,4 @@ from BookValueDividendProjectionsValuationCalculator import BookValueDividendPro
 from DiscountedCashFlowValuationCalculator import DiscountedCashFlowValuationCalculator  # type:ignore
 from FinancialMetricAnalysisCalculator import FinancialMetricAnalysisCalculator  # type:ignore
 from GrahamNumberCalculator import GrahamNumberCalculator  # type:ignore
+from Calculator import Calculator  # type:ignore
