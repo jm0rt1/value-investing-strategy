@@ -1,19 +1,27 @@
 
 # -*- coding: utf-8 -*-
-from abc import ABC
+from abc import ABC, abstractmethod
 from pathlib import Path
 
 
 class API(ABC):
 
-    @classmethod
-    def print_json(cls, symbol: str):
+    @abstractmethod
+    @staticmethod
+    def print_json(symbol: str):
         pass
 
-    @classmethod
-    def json_file(cls, symbol: str, path: Path):
+    @abstractmethod
+    @staticmethod
+    def to_json_file(symbol: str, path: Path):
         pass
 
-    @classmethod
+    @abstractmethod
+    @staticmethod
     def to_dict(symbol: str):
+        pass
+
+    @abstractmethod
+    @staticmethod
+    def from_local_file(symbol: str, cache_path: Path):
         pass
