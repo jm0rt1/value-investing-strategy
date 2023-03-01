@@ -5,6 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Cacher",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/SimpleAlphaVantageCacher/cacher.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
             "name": "Run Main",
             "type": "python",
             "request": "launch",

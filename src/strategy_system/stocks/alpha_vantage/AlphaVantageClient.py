@@ -1,11 +1,12 @@
+import json
 from pathlib import Path
 import requests
 from typing import Any
 
 import pandas as pd
+import sys
+from src.strategy_system.stocks.alpha_vantage.API import API  # nopep8
 
-from src.strategy_system.stocks.alpha_vantage.API import API
-import json
 API_KEY = "UYOGYE4MI3DF16W2"
 
 
@@ -145,8 +146,12 @@ def request_data(symbol: str, function_str: str) -> dict[str, str]:
 
 
 def save_component(symbol: str, base_path: Path, data: dict[str, str], type_str: str):
-    with open(base_path/f"{symbol}.{type_str}.json", "w") as fp:
+    with open(generate_json_file_path(base_path, symbol, type_str), "w") as fp:
         json.dump(data, fp, indent=4)
+
+
+def generate_json_file_path(base_path: Path, symbol: str, type_str: str) -> Path:
+    return Path(base_path/f"{symbol}.{type_str}.json")
 
 
 def load_component(symbol: str, base_path: Path, data: dict[str, str], type_str: str):

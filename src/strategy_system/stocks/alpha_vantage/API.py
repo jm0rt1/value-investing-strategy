@@ -1,27 +1,29 @@
-
+from __future__ import annotations
 # -*- coding: utf-8 -*-
 from abc import ABC, abstractmethod
 from pathlib import Path
 
 
 class API(ABC):
+    TYPE_STR: str
+    FUNCTION_STR: str
 
-    @abstractmethod
     @staticmethod
+    @abstractmethod
     def print_json(symbol: str):
         pass
 
-    @abstractmethod
     @staticmethod
+    @abstractmethod
     def to_json_file(symbol: str, path: Path):
         pass
 
-    @abstractmethod
     @staticmethod
+    @abstractmethod
     def to_dict(symbol: str):
         pass
 
-    @abstractmethod
     @staticmethod
+    @abstractmethod
     def from_local_file(symbol: str, cache_path: Path):
         pass
