@@ -55,8 +55,8 @@ def main():
             add_ticker_to_covered_list(ticker)
             count += 5
             print(f"{ticker} retrieved - API count at: {count}")
-            time.sleep((60*60)+1)
-        if count == 490:
+            time.sleep(60+1)
+        if count == 480:
             print("done.")
             break
     pass
