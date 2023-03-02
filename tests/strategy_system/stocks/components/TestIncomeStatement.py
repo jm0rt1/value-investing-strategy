@@ -1,45 +1,74 @@
-from src.strategy_system.stocks.components.IncomeStatement import IncomeReport
+from pathlib import Path
+from src.strategy_system.stocks.components.IncomeStatement import IncomeReport, IncomeStatement
 import unittest
+DATA = {
+    "symbol": "AAPL",
+    "annualReports": [
+        {
+            "fiscalDateEnding": "2022-09-30",
+            "reportedCurrency": "USD",
+            "grossProfit": "170782000000",
+            "totalRevenue": "391397000000",
+            "costOfRevenue": "248640000000",
+            "costofGoodsAndServicesSold": "223546000000",
+            "operatingIncome": "119437000000",
+            "sellingGeneralAndAdministrative": "25094000000",
+            "researchAndDevelopment": "26251000000",
+            "operatingExpenses": "51345000000",
+            "investmentIncomeNet": "2825000000",
+            "netInterestIncome": "-2931000000",
+            "interestIncome": "106000000",
+            "interestExpense": "2931000000",
+            "nonInterestIncome": "394328000000",
+            "otherNonOperatingIncome": "-228000000",
+            "depreciation": "8700000000",
+            "depreciationAndAmortization": "11104000000",
+            "incomeBeforeTax": "119103000000",
+            "incomeTaxExpense": "19300000000",
+            "interestAndDebtExpense": "2931000000",
+            "netIncomeFromContinuingOperations": "99803000000",
+            "comprehensiveIncomeNetOfTax": "88531000000",
+            "ebit": "122034000000",
+            "ebitda": "133138000000",
+            "netIncome": "99803000000"
+        },
+    ],
+    "quarterlyReports": [
+        {
+            "fiscalDateEnding": "2022-12-31",
+            "reportedCurrency": "USD",
+            "grossProfit": "50332000000",
+            "totalRevenue": "116151000000",
+            "costOfRevenue": "73429000000",
+            "costofGoodsAndServicesSold": "66822000000",
+            "operatingIncome": "36016000000",
+            "sellingGeneralAndAdministrative": "6607000000",
+            "researchAndDevelopment": "7709000000",
+            "operatingExpenses": "14316000000",
+            "investmentIncomeNet": "868000000",
+            "netInterestIncome": "-1003000000",
+            "interestIncome": "135000000",
+            "interestExpense": "1003000000",
+            "nonInterestIncome": "117154000000",
+            "otherNonOperatingIncome": "-258000000",
+            "depreciation": "None",
+            "depreciationAndAmortization": "2916000000",
+            "incomeBeforeTax": "35623000000",
+            "incomeTaxExpense": "5625000000",
+            "interestAndDebtExpense": "1003000000",
+            "netIncomeFromContinuingOperations": "29998000000",
+            "comprehensiveIncomeNetOfTax": "28195000000",
+            "ebit": "36626000000",
+            "ebitda": "38539000000",
+            "netIncome": "29998000000"
+        }]
+}
 
 
 class TestIncomeReport(unittest.TestCase):
 
     def test_load_from_dict(self):
-        data = {
-            "symbol": "AAPL",
-            "annualReports": [
-                {
-                    "fiscalDateEnding": "2022-09-30",
-                    "reportedCurrency": "USD",
-                    "grossProfit": "170782000000",
-                    "totalRevenue": "391397000000",
-                    "costOfRevenue": "248640000000",
-                    "costofGoodsAndServicesSold": "223546000000",
-                    "operatingIncome": "119437000000",
-                    "sellingGeneralAndAdministrative": "25094000000",
-                    "researchAndDevelopment": "26251000000",
-                    "operatingExpenses": "51345000000",
-                    "investmentIncomeNet": "2825000000",
-                    "netInterestIncome": "-2931000000",
-                    "interestIncome": "106000000",
-                    "interestExpense": "2931000000",
-                    "nonInterestIncome": "394328000000",
-                    "otherNonOperatingIncome": "-228000000",
-                    "depreciation": "8700000000",
-                    "depreciationAndAmortization": "11104000000",
-                    "incomeBeforeTax": "119103000000",
-                    "incomeTaxExpense": "19300000000",
-                    "interestAndDebtExpense": "2931000000",
-                    "netIncomeFromContinuingOperations": "99803000000",
-                    "comprehensiveIncomeNetOfTax": "88531000000",
-                    "ebit": "122034000000",
-                    "ebitda": "133138000000",
-                    "netIncome": "99803000000"
-                }
-            ],
-
-        }
-        dict_report: dict[str, str] = data["annual_reports"][0]  # type:ignore
+        dict_report: dict[str, str] = DATA["annualReports"][0]  # type:ignore
         statement = IncomeReport.from_dict(dict_report)
 
         self.assertIsInstance(statement, IncomeReport)
@@ -73,10 +102,20 @@ class TestIncomeReport(unittest.TestCase):
         self.assertEqual(statement.net_income, 99803000000)
 
 
-# class TestIncomeStatement(unittest.TestCase):
-#     def test_from_dict(self):
-#         self.assertIsInstance(statement, IncomeReport)
-#         self.assertEqual(len(statement.annual_reports), 1)
-#         self.assertIsInstance(statement.annual_reports[0], IncomeReport)
-#         self.assertEqual(len(statement.quarterly_reports), 1)
-#         self.assertIsInstance(statement.quarterly_reports[0], IncomeReport)
+class TestIncomeStatement(unittest.TestCase):
+    def test_from_dict(self):
+        statement = IncomeStatement.from_dict(DATA)
+        self.assertIsInstance(statement, IncomeStatement)
+        self.assertEqual(len(statement.annual_reports), 1)
+        self.assertIsInstance(statement.annual_reports[0], IncomeReport)
+        self.assertEqual(len(statement.quarterly_reports), 1)
+        self.assertIsInstance(statement.quarterly_reports[0], IncomeReport)
+
+    def test_from_file(self):
+        statement = IncomeStatement.from_json_file(Path(
+            "scripts/SimpleAlphaVantageCacher/output/json_cache/DATA/AAPL.IncomeStatement.json"))
+        self.assertIsInstance(statement, IncomeStatement)
+        # self.assertEqual(len(statement.annual_reports), 1)
+        # self.assertIsInstance(statement.annual_reports[0], IncomeReport)
+        # self.assertEqual(len(statement.quarterly_reports), 1)
+        # self.assertIsInstance(statement.quarterly_reports[0], IncomeReport)

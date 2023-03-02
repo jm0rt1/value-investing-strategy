@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from dataclasses import dataclass
+from pathlib import Path
 from typing import List, Dict, Union
 from src.strategy_system.stocks.components.StockComponent import StockComponent
 
@@ -14,7 +15,7 @@ from src.strategy_system.stocks.components.StockComponent import StockComponent
 
 
 @dataclass
-class IncomeReport(StockComponent):
+class IncomeReport():
     fiscal_date_ending: str
     reported_currency: str
     gross_profit: float
@@ -44,6 +45,14 @@ class IncomeReport(StockComponent):
 
     @classmethod
     def from_dict(cls, data: dict[str, str]) -> 'IncomeReport':
+        try:
+            depreciation = float(data.get("depreciation", 0))
+        except ValueError as e:
+            depreciation = 0
+        try:
+            interest_income = float(data.get("interestIncome", 0))
+        except ValueError as e:
+            interest_income = 0
         return cls(
             fiscal_date_ending=data.get("fiscalDateEnding", ""),
             reported_currency=data.get("reportedCurrency", ""),
@@ -51,7 +60,7 @@ class IncomeReport(StockComponent):
             total_revenue=float(data.get("totalRevenue", 0)),
             cost_of_revenue=float(data.get("costOfRevenue", 0)),
             cost_of_goods_and_services_sold=float(
-                data.get("costOfGoodsAndServicesSold", 0)),
+                data.get("costofGoodsAndServicesSold", 0)),
             operating_income=float(data.get("operatingIncome", 0)),
             selling_general_and_administrative=float(
                 data.get("sellingGeneralAndAdministrative", 0)),
@@ -60,9 +69,9 @@ class IncomeReport(StockComponent):
             operating_expenses=float(data.get("operatingExpenses", 0)),
             investment_income_net=float(data.get("investmentIncomeNet", 0)),
             net_interest_income=float(data.get("netInterestIncome", 0)),
-            interest_income=float(data.get("interestIncome", 0)),
+            interest_income=interest_income,
             interest_expense=float(data.get("interestExpense", 0)),
-            depreciation=float(data.get("depreciation", 0)),
+            depreciation=depreciation,
             depreciation_and_amortization=float(
                 data.get("depreciationAndAmortization", 0)),
             income_before_tax=float(data.get("incomeBeforeTax", 0)),
@@ -120,3 +129,7 @@ class IncomeStatement(StockComponent):
             annual_reports=annual_reports,
             quarterly_reports=quarterly_reports
         )
+
+    @classmethod
+    def from_json_file(cls, path: Path):
+        return cls.from_dict(cls.load_json_dict(path))
