@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from dataclasses import dataclass
-from stocks.components.StockComponent import StockComponent
+from src.strategy_system.stocks.components.StockComponent import StockComponent
 
 
 @dataclass

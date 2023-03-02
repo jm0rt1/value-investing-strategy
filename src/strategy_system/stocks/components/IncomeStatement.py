@@ -10,7 +10,7 @@ from src.strategy_system.stocks.components.StockComponent import StockComponent
 
 from dataclasses import dataclass
 from typing import Any
-from stocks.components.StockComponent import StockComponent
+from src.strategy_system.stocks.components.StockComponent import StockComponent
 
 
 @dataclass
@@ -24,18 +24,23 @@ class IncomeReport(StockComponent):
     operating_income: float
     selling_general_and_administrative: float
     research_and_development: float
-    operating_expense: float
-    current_assets: float
-    total_assets: float
-    total_liabilities: float
-    current_cash: float
-    current_debt: float
-    short_term_debt: float
-    long_term_debt: float
-    total_cash: float
-    total_debt: float
-    shareholder_equity: float
-    cash_flow: float
+    operating_expenses: float
+    investment_income_net: float
+    net_interest_income: float
+    interest_income: float
+    interest_expense: float
+    depreciation: float
+    depreciation_and_amortization: float
+    income_before_tax: float
+    income_tax_expense: float
+    interest_and_debt_expense: float
+    net_income_from_continuing_operations: float
+    comprehensive_income_net_of_tax: float
+    ebit: float
+    ebitda: float
+    net_income: float
+    non_interest_income: float
+    other_non_operating_income: float
 
     @classmethod
     def from_dict(cls, data: dict[str, str]) -> 'IncomeReport':
@@ -52,28 +57,41 @@ class IncomeReport(StockComponent):
                 data.get("sellingGeneralAndAdministrative", 0)),
             research_and_development=float(
                 data.get("researchAndDevelopment", 0)),
-            operating_expense=float(data.get("operatingExpense", 0)),
-            current_assets=float(data.get("currentAssets", 0)),
-            total_assets=float(data.get("totalAssets", 0)),
-            total_liabilities=float(data.get("totalLiabilities", 0)),
-            current_cash=float(data.get("currentCash", 0)),
-            current_debt=float(data.get("currentDebt", 0)),
-            short_term_debt=float(data.get("shortTermDebt", 0)),
-            long_term_debt=float(data.get("longTermDebt", 0)),
-            total_cash=float(data.get("totalCash", 0)),
-            total_debt=float(data.get("totalDebt", 0)),
-            shareholder_equity=float(data.get("shareholderEquity", 0)),
-            cash_flow=float(data.get("cashflow", 0))
+            operating_expenses=float(data.get("operatingExpenses", 0)),
+            investment_income_net=float(data.get("investmentIncomeNet", 0)),
+            net_interest_income=float(data.get("netInterestIncome", 0)),
+            interest_income=float(data.get("interestIncome", 0)),
+            interest_expense=float(data.get("interestExpense", 0)),
+            depreciation=float(data.get("depreciation", 0)),
+            depreciation_and_amortization=float(
+                data.get("depreciationAndAmortization", 0)),
+            income_before_tax=float(data.get("incomeBeforeTax", 0)),
+            income_tax_expense=float(data.get("incomeTaxExpense", 0)),
+            interest_and_debt_expense=float(
+                data.get("interestAndDebtExpense", 0)),
+            net_income_from_continuing_operations=float(
+                data.get("netIncomeFromContinuingOperations", 0)),
+            comprehensive_income_net_of_tax=float(
+                data.get("comprehensiveIncomeNetOfTax", 0)),
+            ebit=float(
+                data.get("ebit", 0)),
+            ebitda=float(
+                data.get("ebitda", 0)),
+            net_income=float(
+                data.get("netIncome", 0)),
+            non_interest_income=float(data.get("nonInterestIncome", 0)),
+            other_non_operating_income=float(
+                data.get("otherNonOperatingIncome", 0))
         )
 
 
-@dataclass
+@ dataclass
 class IncomeStatement(StockComponent):
     symbol: str
     annual_reports: List[IncomeReport]
     quarterly_reports: List[IncomeReport]
 
-    @classmethod
+    @ classmethod
     def from_dict(cls, data: Dict[str, Union[str, list[dict[str, str]]]]) -> 'IncomeStatement':
         annual_reports: list[IncomeReport] = []
         quarterly_reports: list[IncomeReport] = []

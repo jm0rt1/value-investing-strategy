@@ -1,8 +1,8 @@
 
 # -*- coding: utf-8 -*-
 
-from stocks.components.StockComponent import StockComponent
-from stocks.components.StockComponent import StockComponent
+from src.strategy_system.stocks.components.StockComponent import StockComponent
+from src.strategy_system.stocks.components.StockComponent import StockComponent
 
 
 from dataclasses import dataclass

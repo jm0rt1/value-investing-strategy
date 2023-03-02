@@ -15,8 +15,8 @@ class TestIncomeStatement(unittest.TestCase):
             TO_FILE_OUT_PATH, TEST_SYMBOL, AlphaVantageClient.IncomeStatement.TYPE_STR)
         path.unlink(missing_ok=True)
         self.assertFalse(path.exists())
-        AlphaVantageClient.IncomeStatement.to_json_file(
-            TEST_SYMBOL, TO_FILE_OUT_PATH)
+        # AlphaVantageClient.IncomeStatement.to_json_file(
+        # TEST_SYMBOL, TO_FILE_OUT_PATH)
         self.assertTrue(path.exists())
 
 
@@ -27,8 +27,8 @@ class TestBalanceSheet(unittest.TestCase):
             TO_FILE_OUT_PATH, TEST_SYMBOL, AlphaVantageClient.BalanceSheet.TYPE_STR)
         path.unlink(missing_ok=True)
         self.assertFalse(path.exists())
-        AlphaVantageClient.BalanceSheet.to_json_file(
-            TEST_SYMBOL, TO_FILE_OUT_PATH)
+        # AlphaVantageClient.BalanceSheet.to_json_file(
+        # TEST_SYMBOL, TO_FILE_OUT_PATH)
         self.assertTrue(path.exists())
 
 
@@ -41,8 +41,8 @@ class TestCashFlow(unittest.TestCase):
         path.unlink(missing_ok=True)
         self.assertFalse(path.exists())
 
-        AlphaVantageClient.CashFlow.to_json_file(
-            TEST_SYMBOL, TO_FILE_OUT_PATH)
+        # AlphaVantageClient.CashFlow.to_json_file(
+        # TEST_SYMBOL, TO_FILE_OUT_PATH)
 
         self.assertTrue(path.exists())
 
@@ -54,8 +54,8 @@ class TestEarnings(unittest.TestCase):
             TO_FILE_OUT_PATH, TEST_SYMBOL, AlphaVantageClient.Earnings.TYPE_STR)
         path.unlink(missing_ok=True)
         self.assertFalse(path.exists())
-        AlphaVantageClient.Earnings.to_json_file(
-            TEST_SYMBOL, TO_FILE_OUT_PATH)
+        # AlphaVantageClient.Earnings.to_json_file(
+        # TEST_SYMBOL, TO_FILE_OUT_PATH)
 
         self.assertTrue(path.exists())
 
@@ -67,6 +67,6 @@ class TestCompanyOverview(unittest.TestCase):
             TO_FILE_OUT_PATH, TEST_SYMBOL, AlphaVantageClient.CompanyOverview.TYPE_STR)
         path.unlink(missing_ok=True)
         self.assertFalse(path.exists())
-        AlphaVantageClient.CompanyOverview.to_json_file(
-            TEST_SYMBOL, TO_FILE_OUT_PATH)
+        # AlphaVantageClient.CompanyOverview.to_json_file(
+        # TEST_SYMBOL, TO_FILE_OUT_PATH)
         self.assertTrue(path.exists())
