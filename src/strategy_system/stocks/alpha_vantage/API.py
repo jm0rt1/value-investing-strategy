@@ -2,6 +2,7 @@ from __future__ import annotations
 # -*- coding: utf-8 -*-
 from abc import ABC, abstractmethod
 from pathlib import Path
+from typing import Optional
 
 
 class API(ABC):
@@ -15,7 +16,7 @@ class API(ABC):
 
     @staticmethod
     @abstractmethod
-    def to_json_file(symbol: str, path: Path):
+    def to_json_file(symbol: str, path: Path, data: Optional[dict[str, str]] = None):
         pass
 
     @staticmethod
