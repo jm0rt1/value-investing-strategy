@@ -1,5 +1,5 @@
 from __future__ import annotations
-# -*- coding: utf-8 -*-
+
 from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import Optional
