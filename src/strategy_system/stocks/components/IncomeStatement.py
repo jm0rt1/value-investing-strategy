@@ -10,7 +10,6 @@ from src.strategy_system.stocks.components.StockComponent import StockComponent
 # -*- coding: utf-8 -*-
 
 from dataclasses import dataclass
-from typing import Any
 from src.strategy_system.stocks.components.StockComponent import StockComponent
 
 
