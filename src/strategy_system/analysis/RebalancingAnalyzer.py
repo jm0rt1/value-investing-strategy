@@ -1,15 +1,14 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from analysis.Analyzer import Analyzer
+from src.strategy_system.settings.RebalancingAnalyzerSettings import RebalancingAnalyzerSettings
+
 
 class RebalancingAnalyzer(Analyzer):
-    def __init__(self):
-        self.uid = None
 
-    def __init__(self, settings):
-        pass
+    def __init__(self, settings: RebalancingAnalyzerSettings):
+        self.uid = None
 
     def save(self, ):
         pass
-

@@ -1,19 +1,18 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+
+from strategy_system.settings import QFAnalyzerSettings
+
 
 class QFAParamSettings:
     def __init__(self):
         pass
 
-    def add_analyzer_settings(self, settings):
+    def add_analyzer_settings(self, settings: QFAnalyzerSettings.QFAnalyzerSettings):
         pass
 
-    def __init__(self, ):
-        pass
-
-    def generate_qf_analyzer_settings(self, uid):
+    def generate_qf_analyzer_settings(self, uid: str):
         pass
 
     def get_settings(self, ):
         pass
-

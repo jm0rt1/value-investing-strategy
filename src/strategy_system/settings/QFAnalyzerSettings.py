@@ -1,5 +1,7 @@
 
-#-*- coding: utf-8 -*-
+
+from pathlib import Path
+
 
 class QFAnalyzerSettings:
     def __init__(self):
@@ -14,9 +16,6 @@ class QFAnalyzerSettings:
         self.EPS_threshold = None
         self.yoy_revenue_growth = None
 
-    def __init__(self, ):
-        pass
 
-    def load(self, path):
+    def load(self, path:Path):
         pass
-

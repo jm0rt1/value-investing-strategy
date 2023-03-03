@@ -1,25 +1,25 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+from src.strategy_system.StrategySystem import StrategySystem
+from src.strategy_system.analysis.Analyzer import Analyzer
+
 
 class QFAStrategy:
-    def __init__(self):
-        pass
 
-    def __init__(self, system):
+    def __init__(self, system: StrategySystem):
         pass
 
     def run_all(self, ):
         pass
 
-    def run(self, analyzer):
+    def run_analyzer(self, analyzer: Analyzer):
         pass
 
-    def add_analyzer(self, settings):
+    def run_uid(self, uid: str):
+        pass
+
+    def add_analyzer(self, settings:):
         pass
 
     def generate_qf_analyzer(self, uid):
         pass
-
-    def run(self, uid):
-        pass
-

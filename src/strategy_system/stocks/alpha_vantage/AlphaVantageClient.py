@@ -1,10 +1,8 @@
 import json
 from pathlib import Path
 import requests
-from typing import Any, Optional
+from typing import Optional
 
-import pandas as pd
-import sys
 from src.strategy_system.stocks.alpha_vantage.API import API  # nopep8
 
 API_KEY = "UYOGYE4MI3DF16W2"
