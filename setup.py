@@ -1,5 +1,5 @@
 import sys
-# from cx_Freeze import setup, Executable
+from setuptools import setup
 
 # Dependencies are automatically detected, but it might need fine tuning.
 # "packages": ["os"] is used as example only
@@ -10,10 +10,11 @@ base = None
 if sys.platform == "win32":
     base = "Win32GUI"
 
-setup(  # type:ignore
-    name="guifoo",
+setup(
+    name="value-investing-strategy",
     version="0.1",
-    description="My GUI application!",
-    options={"build_exe": build_exe_options},
-    executables=[Executable("run.py")],  # type:ignore
+    description="",
+    author="James Mortensen",
+    autho_email="jmortens@syr.edu",
+    url="https://github.com/jm0rt1/CSE682-Project"
 )
