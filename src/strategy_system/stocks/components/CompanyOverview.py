@@ -1,11 +1,12 @@
 
-# -*- coding: utf-8 -*-
 
-from src.strategy_system.stocks.components.StockComponent import StockComponent
+from typing import TypeVar, Union
 from src.strategy_system.stocks.components.StockComponent import StockComponent
 
 
 from dataclasses import dataclass
+T = TypeVar('T', bound=dict[str, str])
+K = TypeVar('K', bound=dict[str, Union[str, list[dict[str, str]]]])
 
 
 @dataclass
@@ -60,6 +61,7 @@ class CompanyOverview(StockComponent):
 
     @classmethod
     def from_dict(cls, data: dict[str, str]):
+
         return cls(
             symbol=data.get('Symbol', ''),
             asset_type=data.get('AssetType', ''),
@@ -74,7 +76,8 @@ class CompanyOverview(StockComponent):
             full_time_employees=int(data.get('FullTimeEmployees', 0)),
             fiscal_year_end=data.get('FiscalYearEnd', ''),
             latest_quarter=data.get('LatestQuarter', ''),
-            market_capitalization=float(data.get('MarketCapitalization', 0)),
+            market_capitalization=float(
+                data.get('MarketCapitalization', 0)),
             ebitda=float(data.get('EBITDA', 0)),
             pe_ratio=float(data.get('PERatio', 0)),
             peg_ratio=float(data.get('PEGRatio', 0)),
@@ -98,7 +101,8 @@ class CompanyOverview(StockComponent):
             beta_three_year=float(data.get('Beta3Y', 0)),
             market_status=data.get('MarketStatus', ''),
             forward_pe_ratio=float(data.get('ForwardPE', 0)),
-            price_to_sales_ratio=float(data.get('PriceToSalesRatioTTM', 0)),
+            price_to_sales_ratio=float(
+                data.get('PriceToSalesRatioTTM', 0)),
             price_to_book_ratio=float(data.get('PriceToBookRatio', 0)),
             earnings_per_share=float(data.get('TrailingEps', 0)),
             revenue=float(data.get('RevenueTTM', 0)),

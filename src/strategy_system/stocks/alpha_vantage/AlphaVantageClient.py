@@ -1,10 +1,8 @@
 import json
 from pathlib import Path
 import requests
-from typing import Any
+from typing import Optional
 
-import pandas as pd
-import sys
 from src.strategy_system.stocks.alpha_vantage.API import API  # nopep8
 
 API_KEY = "UYOGYE4MI3DF16W2"
@@ -38,9 +36,10 @@ class AlphaVantageClient():
             print(data)
 
         @staticmethod
-        def to_json_file(symbol: str, path: Path):
-            data = request_data(
-                symbol, AlphaVantageClient.IncomeStatement.FUNCTION_STR)
+        def to_json_file(symbol: str, path: Path, data: Optional[dict[str, str]] = None):
+            if not data:
+                data = request_data(
+                    symbol, AlphaVantageClient.IncomeStatement.FUNCTION_STR)
             save_component(symbol, path, data,
                            AlphaVantageClient.IncomeStatement.TYPE_STR)
 
@@ -59,9 +58,11 @@ class AlphaVantageClient():
             print(data)
 
         @staticmethod
-        def to_json_file(symbol: str, path: Path):
-            data = request_data(
-                symbol, AlphaVantageClient.BalanceSheet.FUNCTION_STR)
+        def to_json_file(symbol: str, path: Path, data: Optional[dict[str, str]] = None):
+            if not data:
+
+                data = request_data(
+                    symbol, AlphaVantageClient.BalanceSheet.FUNCTION_STR)
             save_component(symbol, path, data,
                            AlphaVantageClient.BalanceSheet.TYPE_STR)
 
@@ -81,9 +82,10 @@ class AlphaVantageClient():
             print(data)
 
         @staticmethod
-        def to_json_file(symbol: str, path: Path):
-            data = request_data(
-                symbol, AlphaVantageClient.CashFlow.FUNCTION_STR)
+        def to_json_file(symbol: str, path: Path, data: Optional[dict[str, str]] = None):
+            if not data:
+                data = request_data(
+                    symbol, AlphaVantageClient.CashFlow.FUNCTION_STR)
             save_component(symbol, path, data,
                            AlphaVantageClient.CashFlow.TYPE_STR)
 
@@ -103,9 +105,10 @@ class AlphaVantageClient():
             print(data)
 
         @staticmethod
-        def to_json_file(symbol: str, path: Path):
-            data = request_data(
-                symbol, AlphaVantageClient.Earnings.FUNCTION_STR)
+        def to_json_file(symbol: str, path: Path, data: Optional[dict[str, str]] = None):
+            if not data:
+                data = request_data(
+                    symbol, AlphaVantageClient.Earnings.FUNCTION_STR)
             save_component(symbol, path, data,
                            AlphaVantageClient.Earnings.TYPE_STR)
 
@@ -124,9 +127,10 @@ class AlphaVantageClient():
             print(data)
 
         @staticmethod
-        def to_json_file(symbol: str, path: Path):
-            data = request_data(
-                symbol, AlphaVantageClient.CompanyOverview.FUNCTION_STR)
+        def to_json_file(symbol: str, path: Path, data: Optional[dict[str, str]] = None):
+            if not data:
+                data = request_data(
+                    symbol, AlphaVantageClient.CompanyOverview.FUNCTION_STR)
             save_component(symbol, path, data,
                            AlphaVantageClient.CompanyOverview.TYPE_STR)
 

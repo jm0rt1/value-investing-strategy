@@ -1,11 +1,11 @@
 
-# -*- coding: utf-8 -*-
+
 from __future__ import annotations
 from os import path
 from pathlib import Path
 
 from abc import ABC, abstractmethod
-from typing import Union
+from typing import Any, Union
 import json
 
 
@@ -15,7 +15,7 @@ class StockComponent(ABC):
 
     @classmethod
     @abstractmethod
-    def from_dict(cls, data: dict[str, Union[str, list[dict[str, str]]]]) -> StockComponent:
+    def from_dict(cls, data: dict[str, Any]) -> StockComponent:
         pass
 
     def from_alpha_vantage_data(self, cls, data):

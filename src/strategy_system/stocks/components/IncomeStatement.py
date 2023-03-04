@@ -1,5 +1,4 @@
 
-# -*- coding: utf-8 -*-
 
 from dataclasses import dataclass
 from pathlib import Path
@@ -7,10 +6,7 @@ from typing import List, Dict, Union
 from src.strategy_system.stocks.components.StockComponent import StockComponent
 
 
-# -*- coding: utf-8 -*-
-
 from dataclasses import dataclass
-from typing import Any
 from src.strategy_system.stocks.components.StockComponent import StockComponent
 
 
@@ -101,15 +97,15 @@ class IncomeStatement(StockComponent):
     quarterly_reports: List[IncomeReport]
 
     @ classmethod
-    def from_dict(cls, data: Dict[str, Union[str, list[dict[str, str]]]]) -> 'IncomeStatement':
+    def from_dict(cls, data: dict[str, Union[str, list[dict[str, str]]]]) -> 'IncomeStatement':
         annual_reports: list[IncomeReport] = []
         quarterly_reports: list[IncomeReport] = []
 
         raw_annual_reports: list[dict[str, str]
-                                 ] = data.get("annualReports", [])
+                                 ] = data.get("annualReports", [])  # type:ignore
 
         raw_qtrly_reports: list[dict[str, str]
-                                ] = data.get("quarterlyReports", [])
+                                ] = data.get("quarterlyReports", [])  # type:ignore
 
         if type(raw_annual_reports) is str:
             raise TypeError("Annual reports should not be a string")

@@ -1,6 +1,5 @@
 
 
-import os
 from pathlib import Path
 import time
 import pandas as pd
@@ -20,10 +19,10 @@ COVERED_LIST_PATH.touch(exist_ok=True)
 
 
 def get_s_and_p_list() -> list[str]:
-    sp500 = pd.read_html(
+    sp500 = pd.read_html(  # type:ignore
         'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
-    sp500_list = np.array(sp500[0]['Symbol'])
-    return list(sp500_list)
+    sp500_list = np.array(sp500[0]['Symbol'])  # type:ignore
+    return list(sp500_list)  # type:ignore
 
 
 def get_covered_list():

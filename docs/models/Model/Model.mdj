@@ -537,7 +537,7 @@
 											"top": 126,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+run(self)",
+											"text": "+run()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -554,7 +554,7 @@
 											"top": 141,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+initialize(self)",
+											"text": "+initialize()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -571,7 +571,7 @@
 											"top": 156,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+reset(self)",
+											"text": "+reset()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -588,7 +588,7 @@
 											"top": 171,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+calculate_graham_number(self, ticker: str)",
+											"text": "+calculate_graham_number(ticker: str)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -605,7 +605,7 @@
 											"top": 186,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+calculate_book_value_dividend_projections_valuation(self, ticker: str)",
+											"text": "+calculate_book_value_dividend_projections_valuation(ticker: str)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -622,7 +622,7 @@
 											"top": 201,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+compare_qfa(self, tickers: list<str>)",
+											"text": "+compare_qfa(tickers: list<str>)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -639,7 +639,7 @@
 											"top": 216,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+save_qfa(self, analysis_to_save: QFAnalyzer)",
+											"text": "+save_qfa(analysis_to_save: QFAnalyzer)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -656,7 +656,7 @@
 											"top": 231,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+calculate_graham_number(self, ticker: str)",
+											"text": "+calculate_graham_number(ticker: str)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -673,7 +673,7 @@
 											"top": 246,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+calculate_discounted_cash_flow_valuation(self, ticker: str)",
+											"text": "+calculate_discounted_cash_flow_valuation(ticker: str)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -690,7 +690,7 @@
 											"top": 261,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+calculate_asset_based_valuation(self, ticker: str)",
+											"text": "+calculate_asset_based_valuation(ticker: str)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -707,7 +707,7 @@
 											"top": 276,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+calculator_financial_metric_analysis(self, ticker: str)",
+											"text": "+calculator_financial_metric_analysis(ticker: str)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -724,7 +724,7 @@
 											"top": 291,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+calculate_financial_metric_analysis_valuation(self, ticker: str)",
+											"text": "+calculate_financial_metric_analysis_valuation(ticker: str)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -741,7 +741,7 @@
 											"top": 306,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+generate_qf_analysis(self): QFAnalyzer",
+											"text": "+generate_qf_analysis(): QFAnalyzer",
 											"horizontalAlignment": 0
 										},
 										{
@@ -758,7 +758,7 @@
 											"top": 321,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+generate_rebalancing_analysis(self): RebalancingAnalyzer",
+											"text": "+generate_rebalancing_analysis(): RebalancingAnalyzer",
 											"horizontalAlignment": 0
 										},
 										{
@@ -775,7 +775,7 @@
 											"top": 336,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+add_rebalancing_dataflow(self, analyzer: RebalancingAnalyzer)",
+											"text": "+add_rebalancing_dataflow(analyzer: RebalancingAnalyzer)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -792,7 +792,7 @@
 											"top": 351,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+add_qfa_dataflow(self, analyzer: QFAnalyzer)",
+											"text": "+add_qfa_dataflow(analyzer: QFAnalyzer)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -809,7 +809,7 @@
 											"top": 366,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+run_rebalance(self, uid: str)",
+											"text": "+run_rebalance(uid: str)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -826,7 +826,7 @@
 											"top": 381,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+run_qfa(self, uid: str)",
+											"text": "+run_qfa(uid: str)",
 											"horizontalAlignment": 0
 										},
 										{
@@ -843,7 +843,7 @@
 											"top": 396,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+get_settings(self): Settings",
+											"text": "+get_settings(): Settings",
 											"horizontalAlignment": 0
 										},
 										{
@@ -860,7 +860,7 @@
 											"top": 411,
 											"width": 406.48486328125,
 											"height": 13,
-											"text": "+compare_stocks(self, tickers: list<str>)",
+											"text": "+compare_stocks(tickers: list<str>)",
 											"horizontalAlignment": 0
 										}
 									],
@@ -6410,7 +6410,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1413,
+															"top": 1405,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "«interface»"
@@ -6424,7 +6424,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;1",
 															"left": 1965,
-															"top": 1428,
+															"top": 1420,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "StrategyInterface"
@@ -6438,7 +6438,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1443,
+															"top": 1435,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "(from strategy_system)"
@@ -6453,7 +6453,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": -256,
-															"top": 752,
+															"top": 736,
 															"height": 13,
 															"horizontalAlignment": 1
 														}
@@ -6461,7 +6461,7 @@
 													"fillColor": "#adc8ff",
 													"font": "Arial;13;0",
 													"left": 1960,
-													"top": 1408,
+													"top": 1400,
 													"width": 416.48486328125,
 													"height": 53,
 													"stereotypeLabel": {
@@ -6489,7 +6489,7 @@
 													"fillColor": "#adc8ff",
 													"font": "Arial;13;0",
 													"left": 1960,
-													"top": 1461,
+													"top": 1453,
 													"width": 416.48486328125,
 													"height": 10
 												},
@@ -6516,7 +6516,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1869,
-															"top": 1708,
+															"top": 1692,
 															"width": 166,
 															"height": 13,
 															"text": "+__init__()",
@@ -6534,7 +6534,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1478,
+															"top": 1470,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+run()",
@@ -6552,7 +6552,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1493,
+															"top": 1485,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+initialize()",
@@ -6570,7 +6570,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1508,
+															"top": 1500,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+reset()",
@@ -6588,7 +6588,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1523,
+															"top": 1515,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+calculate_graham_number(ticker: str)",
@@ -6606,7 +6606,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1538,
+															"top": 1530,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+calculate_book_value_dividend_projections_valuation(ticker: str)",
@@ -6624,7 +6624,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1553,
+															"top": 1545,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+compare_qfa(tickers: list<str>)",
@@ -6643,7 +6643,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1933,
-															"top": 1520,
+															"top": 1504,
 															"width": 374.7021484375,
 															"height": 13,
 															"text": "+save_qfa(analysis_to_save: QFAnalyzer)",
@@ -6661,7 +6661,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1568,
+															"top": 1560,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+calculate_graham_number(ticker: str)",
@@ -6679,7 +6679,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1583,
+															"top": 1575,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+calculate_discounted_cash_flow_valuation(ticker: str)",
@@ -6697,7 +6697,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1598,
+															"top": 1590,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+calculate_asset_based_valuation(ticker: str)",
@@ -6715,7 +6715,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1613,
+															"top": 1605,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+calculator_financial_metric_analysis(ticker: str)",
@@ -6733,7 +6733,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1628,
+															"top": 1620,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+calculate_financial_metric_analysis_valuation(ticker: str)",
@@ -6751,7 +6751,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1643,
+															"top": 1635,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+generate_qf_analysis(): QFAnalyzer",
@@ -6769,7 +6769,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1658,
+															"top": 1650,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+generate_rebalancing_analysis(): RebalancingAnalyzer",
@@ -6787,7 +6787,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1673,
+															"top": 1665,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+add_rebalancing_dataflow(analyzer: RebalancingAnalyzer)",
@@ -6805,7 +6805,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1688,
+															"top": 1680,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+add_qfa_dataflow(analyzer: QFAnalyzer)",
@@ -6823,7 +6823,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1703,
+															"top": 1695,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+run_rebalance(uid: str)",
@@ -6841,7 +6841,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1718,
+															"top": 1710,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+run_qfa(uid: str)",
@@ -6859,7 +6859,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1733,
+															"top": 1725,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+get_settings(): Settings",
@@ -6877,7 +6877,7 @@
 															"fillColor": "#adc8ff",
 															"font": "Arial;13;0",
 															"left": 1965,
-															"top": 1748,
+															"top": 1740,
 															"width": 406.48486328125,
 															"height": 13,
 															"text": "+compare_stocks(tickers: list<str>)",
@@ -6887,7 +6887,7 @@
 													"fillColor": "#adc8ff",
 													"font": "Arial;13;0",
 													"left": 1960,
-													"top": 1471,
+													"top": 1463,
 													"width": 416.48486328125,
 													"height": 295
 												},
@@ -6904,7 +6904,7 @@
 													"fillColor": "#adc8ff",
 													"font": "Arial;13;0",
 													"left": -120,
-													"top": 488,
+													"top": 480,
 													"width": 10,
 													"height": 10
 												},
@@ -6921,7 +6921,7 @@
 													"fillColor": "#adc8ff",
 													"font": "Arial;13;0",
 													"left": -120,
-													"top": 488,
+													"top": 480,
 													"width": 10,
 													"height": 10
 												}
@@ -6930,7 +6930,7 @@
 											"font": "Arial;13;0",
 											"containerChangeable": true,
 											"left": 1960,
-											"top": 1408,
+											"top": 1400,
 											"width": 416.48486328125,
 											"height": 358,
 											"showNamespace": true,
@@ -6972,7 +6972,7 @@
 													"visible": false,
 													"font": "Arial;13;0",
 													"left": 2145,
-													"top": 1783,
+													"top": 1779,
 													"height": 13,
 													"alpha": 1.5707963267948966,
 													"distance": 15,
@@ -6993,7 +6993,7 @@
 													"visible": null,
 													"font": "Arial;13;0",
 													"left": 2130,
-													"top": 1783,
+													"top": 1779,
 													"height": 13,
 													"alpha": 1.5707963267948966,
 													"distance": 30,
@@ -7014,7 +7014,7 @@
 													"visible": false,
 													"font": "Arial;13;0",
 													"left": 2174,
-													"top": 1784,
+													"top": 1780,
 													"height": 13,
 													"alpha": -1.5707963267948966,
 													"distance": 15,
@@ -7031,7 +7031,7 @@
 											"tail": {
 												"$ref": "AAAAAAGGEAlj2IJEexI="
 											},
-											"points": "2160:1816;2160:1765",
+											"points": "2160:1816;2160:1757",
 											"showVisibility": true,
 											"nameLabel": {
 												"$ref": "AAAAAAGGEC9QsoeCixw="
@@ -11744,7 +11744,7 @@
 															"top": 1134,
 															"width": 167,
 															"height": 13,
-															"text": "strategyTypes"
+															"text": "strategy_types"
 														},
 														{
 															"_type": "LabelView",
@@ -12138,7 +12138,7 @@
 															"top": 1173,
 															"width": 201.25244140625,
 															"height": 13,
-															"text": "+__init__(self)",
+															"text": "+__init__()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13071,7 +13071,7 @@
 															"top": 772,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+run(self)",
+															"text": "+run()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13088,7 +13088,7 @@
 															"top": 787,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+initialize(self)",
+															"text": "+initialize()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13105,7 +13105,7 @@
 															"top": 802,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+reset(self)",
+															"text": "+reset()",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13122,7 +13122,7 @@
 															"top": 817,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_graham_number(self, ticker: str)",
+															"text": "+calculate_graham_number(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13139,7 +13139,7 @@
 															"top": 832,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_book_value_dividend_projections_valuation(self, ticker: str)",
+															"text": "+calculate_book_value_dividend_projections_valuation(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13156,7 +13156,7 @@
 															"top": 847,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+compare_qfa(self, tickers: list<str>)",
+															"text": "+compare_qfa(tickers: list<str>)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13173,7 +13173,7 @@
 															"top": 862,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+save_qfa(self, analysis_to_save: QFAnalyzer)",
+															"text": "+save_qfa(analysis_to_save: QFAnalyzer)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13190,7 +13190,7 @@
 															"top": 877,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_graham_number(self, ticker: str)",
+															"text": "+calculate_graham_number(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13207,7 +13207,7 @@
 															"top": 892,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_discounted_cash_flow_valuation(self, ticker: str)",
+															"text": "+calculate_discounted_cash_flow_valuation(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13224,7 +13224,7 @@
 															"top": 907,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_asset_based_valuation(self, ticker: str)",
+															"text": "+calculate_asset_based_valuation(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13241,7 +13241,7 @@
 															"top": 922,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculator_financial_metric_analysis(self, ticker: str)",
+															"text": "+calculator_financial_metric_analysis(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13258,7 +13258,7 @@
 															"top": 937,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+calculate_financial_metric_analysis_valuation(self, ticker: str)",
+															"text": "+calculate_financial_metric_analysis_valuation(ticker: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13275,7 +13275,7 @@
 															"top": 952,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+generate_qf_analysis(self): QFAnalyzer",
+															"text": "+generate_qf_analysis(): QFAnalyzer",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13292,7 +13292,7 @@
 															"top": 967,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+generate_rebalancing_analysis(self): RebalancingAnalyzer",
+															"text": "+generate_rebalancing_analysis(): RebalancingAnalyzer",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13309,7 +13309,7 @@
 															"top": 982,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+add_rebalancing_dataflow(self, analyzer: RebalancingAnalyzer)",
+															"text": "+add_rebalancing_dataflow(analyzer: RebalancingAnalyzer)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13326,7 +13326,7 @@
 															"top": 997,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+add_qfa_dataflow(self, analyzer: QFAnalyzer)",
+															"text": "+add_qfa_dataflow(analyzer: QFAnalyzer)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13343,7 +13343,7 @@
 															"top": 1012,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+run_rebalance(self, uid: str)",
+															"text": "+run_rebalance(uid: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13360,7 +13360,7 @@
 															"top": 1027,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+run_qfa(self, uid: str)",
+															"text": "+run_qfa(uid: str)",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13377,7 +13377,7 @@
 															"top": 1042,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+get_settings(self): Settings",
+															"text": "+get_settings(): Settings",
 															"horizontalAlignment": 0
 														},
 														{
@@ -13394,7 +13394,7 @@
 															"top": 1057,
 															"width": 406.48486328125,
 															"height": 13,
-															"text": "+compare_stocks(self, tickers: list<str>)",
+															"text": "+compare_stocks(tickers: list<str>)",
 															"horizontalAlignment": 0
 														}
 													],
@@ -13481,7 +13481,7 @@
 													"visible": false,
 													"font": "Arial;13;0",
 													"left": 2071,
-													"top": 1082,
+													"top": 1090,
 													"height": 13,
 													"alpha": 1.5707963267948966,
 													"distance": 15,
@@ -13502,7 +13502,7 @@
 													"visible": null,
 													"font": "Arial;13;0",
 													"left": 2056,
-													"top": 1082,
+													"top": 1090,
 													"height": 13,
 													"alpha": 1.5707963267948966,
 													"distance": 30,
@@ -13523,7 +13523,7 @@
 													"visible": false,
 													"font": "Arial;13;0",
 													"left": 2100,
-													"top": 1083,
+													"top": 1091,
 													"height": 13,
 													"alpha": -1.5707963267948966,
 													"distance": 15,
@@ -19606,7 +19606,7 @@
 																	"top": 3522,
 																	"width": 743.21533203125,
 																	"height": 13,
-																	"text": "+__init__(self: Stock, ticker: str)",
+																	"text": "+__init__(ticker: str)",
 																	"horizontalAlignment": 0
 																},
 																{
@@ -25428,7 +25428,7 @@
 																			"top": 878,
 																			"width": 179.537109375,
 																			"height": 13,
-																			"text": "+__init__(self, stock_ticker: str)",
+																			"text": "+__init__(stock_ticker: str)",
 																			"horizontalAlignment": 0
 																		},
 																		{
@@ -25445,7 +25445,7 @@
 																			"top": 893,
 																			"width": 179.537109375,
 																			"height": 13,
-																			"text": "+run(self): float",
+																			"text": "+run(): float",
 																			"horizontalAlignment": 0
 																		}
 																	],
@@ -25981,7 +25981,7 @@
 																			"top": 878,
 																			"width": 313.51708984375,
 																			"height": 13,
-																			"text": "+__init__(self, stock_ticker: str)",
+																			"text": "+__init__(stock_ticker: str)",
 																			"horizontalAlignment": 0
 																		},
 																		{
@@ -25998,7 +25998,7 @@
 																			"top": 893,
 																			"width": 313.51708984375,
 																			"height": 13,
-																			"text": "+run(self): float",
+																			"text": "+run(): float",
 																			"horizontalAlignment": 0
 																		}
 																	],
@@ -26287,7 +26287,7 @@
 																			"top": 863,
 																			"width": 253.5380859375,
 																			"height": 13,
-																			"text": "+__init__(self, stock_ticker: str)",
+																			"text": "+__init__(stock_ticker: str)",
 																			"horizontalAlignment": 0
 																		},
 																		{
@@ -26304,7 +26304,7 @@
 																			"top": 878,
 																			"width": 253.5380859375,
 																			"height": 13,
-																			"text": "+run(self): float",
+																			"text": "+run(): float",
 																			"horizontalAlignment": 0
 																		}
 																	],
@@ -26592,7 +26592,7 @@
 																			"top": 863,
 																			"width": 195.787109375,
 																			"height": 13,
-																			"text": "+__init__(self, stock_ticker: str)",
+																			"text": "+__init__(stock_ticker: str)",
 																			"horizontalAlignment": 0
 																		},
 																		{
@@ -26609,7 +26609,7 @@
 																			"top": 878,
 																			"width": 195.787109375,
 																			"height": 13,
-																			"text": "+run(self): float",
+																			"text": "+run(): float",
 																			"horizontalAlignment": 0
 																		}
 																	],
@@ -26897,7 +26897,7 @@
 																			"top": 864,
 																			"width": 211.681640625,
 																			"height": 13,
-																			"text": "+__init__(self, stock_ticker: str)",
+																			"text": "+__init__(stock_ticker: str)",
 																			"horizontalAlignment": 0
 																		},
 																		{
@@ -26914,7 +26914,7 @@
 																			"top": 879,
 																			"width": 211.681640625,
 																			"height": 13,
-																			"text": "+run(self): float",
+																			"text": "+run(): float",
 																			"horizontalAlignment": 0
 																		}
 																	],
@@ -27255,7 +27255,7 @@
 																			"top": 907,
 																			"width": 183,
 																			"height": 13,
-																			"text": "+__init__(self, stock_ticker: str)",
+																			"text": "+__init__(stock_ticker: str)",
 																			"horizontalAlignment": 0
 																		},
 																		{
@@ -27272,7 +27272,7 @@
 																			"top": 922,
 																			"width": 183,
 																			"height": 13,
-																			"text": "+run(self): float",
+																			"text": "+run(): float",
 																			"horizontalAlignment": 0
 																		}
 																	],

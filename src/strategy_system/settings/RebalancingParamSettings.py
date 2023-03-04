@@ -1,19 +1,19 @@
 
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+
+from pathlib import Path
+from src.strategy_system.settings.Settings import Settings
+
 
 class RebalancingParamSettings:
     def __init__(self):
         pass
 
-    def add_analyzer_settings(self, settings):
-        pass
-
-    def __init__(self, ):
+    def add_analyzer_settings(self, settings: Settings):
         pass
 
     def get_settings(self, ):
         pass
 
-    def load(self, path):
+    def load(self, path: Path):
         pass
-
