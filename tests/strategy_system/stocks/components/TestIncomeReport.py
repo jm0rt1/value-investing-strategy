@@ -1,6 +1,6 @@
 import unittest
 import json
-from src.strategy_system.stocks.components.IncomeStatement import IncomeReport
+from src.strategy_system.stocks.stock.components.IncomeStatement import IncomeReport
 
 
 class TestIncomeReport(unittest.TestCase):

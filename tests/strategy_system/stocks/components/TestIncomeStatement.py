@@ -1,5 +1,5 @@
 from pathlib import Path
-from src.strategy_system.stocks.components.IncomeStatement import IncomeReport, IncomeStatement
+from src.strategy_system.stocks.stock.components.IncomeStatement import IncomeReport, IncomeStatement
 import unittest
 DATA = {
     "symbol": "AAPL",

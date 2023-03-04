@@ -1,6 +1,6 @@
 from unittest import TestCase
 from unittest.mock import patch
-from src.strategy_system.stocks.components.CashFlowReport import CashFlowReport
+from src.strategy_system.stocks.stock.components.CashFlowReport import CashFlowReport
 
 
 class TestCashFlowReport(TestCase):
