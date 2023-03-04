@@ -1,7 +1,6 @@
-from pathlib import Path
 import unittest
 
-from src.strategy_system.stocks.components import CompanyOverview
+from src.strategy_system.stocks.stock.components import CompanyOverview
 DATA = {
     "Symbol": "AAPL",
     "AssetType": "Common Stock",

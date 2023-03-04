@@ -1,6 +1,6 @@
 
 
-from src.strategy_system.stocks.components import IncomeStatement, EarningsReport, BalanceSheet, CashFlow, CompanyOverview
+from src.strategy_system.stocks.stock.components import IncomeStatement, EarningsReport, BalanceSheet, CashFlow, CompanyOverview
 from src.strategy_system.stocks.calculators import SharpeRatioCalculator
 
 
