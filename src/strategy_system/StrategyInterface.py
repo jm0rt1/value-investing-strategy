@@ -51,12 +51,7 @@ class StrategyInterface(abc.ABC):
         pass
 
     @abc.abstractmethod
-    def compare_qfa(self, tickers: str):
-        pass
-
-    @abc.abstractmethod
-    def save_qfa(self, analysis_to_save: QFAnalyzer):
-        pass
+    def compare_qfa(self, tickers: list[str]): ...
 
     @abc.abstractmethod
     def calculate_discounted_cash_flow_valuation(self, ticker: str):

@@ -13,10 +13,10 @@ class StrategySystem(StrategyInterface):
     def get_stock(self, ticker: str):
         pass
 
-    def get_QFAStrategy(self, uid):
+    def get_QFAStrategy(self, uid: str):
         pass
 
-    def get_RebalancingStrategy(self, uid):
+    def get_RebalancingStrategy(self, uid: str):
         pass
 
     def run(self, ):
@@ -31,10 +31,7 @@ class StrategySystem(StrategyInterface):
     def calculate_book_value_dividend_projections_valuation(self, ticker: str):
         pass
 
-    def compare_qfa(self, tickers):
-        pass
-
-    def save_qfa(self, analysis_to_save):
+    def compare_qfa(self, tickers: list[str]):
         pass
 
     def calculate_graham_number(self, ticker):
