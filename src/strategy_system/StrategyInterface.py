@@ -3,6 +3,8 @@
 import abc
 
 from src.strategy_system.analysis.QFAnalyzer import QFAnalyzer
+from src.strategy_system.analysis.RebalancingAnalyzer import RebalancingAnalyzer
+from src.strategy_system.settings.Settings import Settings
 
 
 class StrategyInterface(abc.ABC):
@@ -81,25 +83,25 @@ class StrategyInterface(abc.ABC):
         pass
 
     @abc.abstractmethod
-    def add_rebalancing_dataflow(self, analyzer):
+    def add_rebalancing_dataflow(self, analyzer: RebalancingAnalyzer):
         pass
 
     @abc.abstractmethod
-    def add_qfa_dataflow(self, analyzer):
+    def add_qfa_dataflow(self, analyzer: QFAnalyzer):
         pass
 
     @abc.abstractmethod
-    def run_rebalance(self, uid):
+    def run_rebalance(self, uid: str):
         pass
 
     @abc.abstractmethod
-    def run_qfa(self, uid):
+    def run_qfa(self, uid: str):
         pass
 
     @abc.abstractmethod
-    def get_settings(self, ):
+    def get_settings(self, ) -> Settings:
         pass
 
     @abc.abstractmethod
-    def compare_stocks(self, tickers):
+    def compare_stocks(self, tickers: list[str]):
         pass
