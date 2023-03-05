@@ -15,10 +15,14 @@ class StrategyInterface(abc.ABC):
 
     @abc.abstractmethod
     def initialize(self, ):
+
         pass
 
     @abc.abstractmethod
     def reset(self, ):
+        """
+        reset the system to defaults
+        """
         pass
 
     @abc.abstractmethod
