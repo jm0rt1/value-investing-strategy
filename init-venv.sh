@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-python3 -m venv ./venv 
+#python3 -m venv ./venv 
+py -3.11 -m venv ./venv
+
 source ./venv/bin/activate
 FILE=requirements.txt
 if test -f "$FILE"; then
