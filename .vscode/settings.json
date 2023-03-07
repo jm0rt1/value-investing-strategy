@@ -25,4 +25,5 @@
     "python.analysis.extraPaths": [
         "./src"
     ],
+    "python.terminal.activateEnvironment": true,
 }
