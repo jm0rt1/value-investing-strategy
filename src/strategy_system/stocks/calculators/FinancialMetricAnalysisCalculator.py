@@ -5,7 +5,7 @@ from stocks.calculators.Calculator import Calculator
 
 
 class FinancialMetricAnalysisCalculator(Calculator):
-    def __init__(self, stock_ticker: str):
+    def __init__(self, stock: Stock):
         pass
 
     def run(self, ):

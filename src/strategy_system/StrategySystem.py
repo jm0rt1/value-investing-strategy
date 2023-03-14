@@ -10,8 +10,7 @@ class StrategySystem(StrategyInterface):
     def __init__(self, ):
         pass
 
-    def get_stock(self, ticker: str):
-        pass
+
 
     def get_QFAStrategy(self, uid: str):
         pass

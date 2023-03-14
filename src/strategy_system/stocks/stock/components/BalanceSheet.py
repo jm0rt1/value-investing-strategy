@@ -1,6 +1,6 @@
 
 
-from src.strategy_system.stocks.components.StockComponent import StockComponent
+from strategy_system.stocks.components.StockComponent import StockComponent
 
 
 class BalanceSheet(StockComponent):
