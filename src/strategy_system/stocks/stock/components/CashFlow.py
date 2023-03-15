@@ -1,10 +1,10 @@
 
 
-from src.strategy_system.stocks.components.StockComponent import StockComponent
+from src.strategy_system.stocks.stock.components.StockComponent import StockComponent
 
 
 from dataclasses import dataclass
-from src.strategy_system.stocks.components.StockComponent import StockComponent
+from src.strategy_system.stocks.stock.components.StockComponent import StockComponent
 
 
 @dataclass
