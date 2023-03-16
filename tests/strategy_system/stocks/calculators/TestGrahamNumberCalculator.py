@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import unittest
 from src.strategy_system.stocks.calculators import GrahamNumberCalculator
 from src.strategy_system.stocks.stock.Stock import Stock
