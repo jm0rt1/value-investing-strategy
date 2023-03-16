@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 from src.strategy_system.stocks.stock.components import IncomeStatement, Earnings, BalanceSheet, CashFlow, CompanyOverview
-import src.strategy_system.stocks.calculators as calcs
+from src.strategy_system.stocks import calculators as calcs
 from src.strategy_system.stocks.calculators import GrahamNumberCalculator
 
 
