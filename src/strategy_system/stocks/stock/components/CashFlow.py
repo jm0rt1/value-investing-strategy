@@ -85,13 +85,17 @@ class CashflowReport:
                 data.get("changeInExchangeRate", ""))
         except ValueError as _:
             change_in_exchange_rate = 0
+        try:
+            payments_for_operating_activities = float(data.get(
+                "paymentsForOperatingActivities", ""))
+        except ValueError as _:
+            payments_for_operating_activities = 0
 
         return cls(
             fiscal_date_ending=data.get("fiscalDateEnding", ""),
             reported_currency=data.get("reportedCurrency", ""),
             operating_cashflow=float(data.get("operatingCashflow", "")),
-            payments_for_operating_activities=float(data.get(
-                "paymentsForOperatingActivities", "")),
+            payments_for_operating_activities=payments_for_operating_activities,
             proceeds_from_operating_activities=proceeds_from_operating_activities,
             change_in_operating_liabilities=float(data.get(
                 "changeInOperatingLiabilities", "")),

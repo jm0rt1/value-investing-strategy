@@ -80,7 +80,7 @@ DATA = {
 class TestCashFlowReport(unittest.TestCase):
 
     def test_load_from_dict(self):
-        dict_report: dict[str, str] = DATA["annualReports"][0]  # type:ignore
+        dict_report: dict[str, str] = DATA["quarterlyReports"][0]  # nopep8  #type:ignore
         statement = CashflowReport.from_dict(dict_report)
 
         self.assertIsInstance(statement, CashflowReport)
@@ -88,8 +88,8 @@ class TestCashFlowReport(unittest.TestCase):
         self.assertEqual(statement.fiscal_date_ending, "2022-12-31")
         self.assertEqual(statement.reported_currency, "USD")
         self.assertEqual(statement.operating_cashflow, 7428000000)
-        self.assertEqual(statement.payments_for_operating_activities, None)
-        self.assertEqual(statement.proceeds_from_operating_activities, None)
+        self.assertEqual(statement.payments_for_operating_activities, 0)
+        self.assertEqual(statement.proceeds_from_operating_activities, 0)
         self.assertEqual(statement.change_in_operating_liabilities, 1275000000)
         self.assertEqual(statement.change_in_operating_assets, 790000000)
         self.assertEqual(
@@ -99,29 +99,29 @@ class TestCashFlowReport(unittest.TestCase):
         self.assertEqual(statement.change_in_inventory, 170000000)
         self.assertEqual(statement.profit_loss, 2472000000)
         self.assertEqual(statement.cash_flow_from_investment, -448000000)
-        self.assertEqual(statement.cash_flow_from_financing, 9634000000)
+        self.assertEqual(statement.cash_flow_from_financing, -9634000000)
         self.assertEqual(
             statement.proceeds_from_repayments_of_short_term_debt, 0)
         self.assertEqual(
             statement.payments_for_repurchase_of_common_stock, 4000000)
         self.assertEqual(statement.payments_for_repurchase_of_equity, 4000000)
         self.assertEqual(
-            statement.payments_for_repurchase_of_preferred_stock, None)
+            statement.payments_for_repurchase_of_preferred_stock, 0)
         self.assertEqual(statement.dividend_payout, 2506000000)
         self.assertEqual(statement.dividend_payout_common_stock, 2506000000)
-        self.assertEqual(statement.dividend_payout_preferred_stock, None)
+        self.assertEqual(statement.dividend_payout_preferred_stock, 0)
         self.assertEqual(
-            statement.proceeds_from_issuance_of_common_stock, None)
+            statement.proceeds_from_issuance_of_common_stock, 0)
         self.assertEqual(
             statement.proceeds_from_issuance_of_long_term_debt_and_capital_securities_net, 0)
         self.assertEqual(
-            statement.proceeds_from_issuance_of_preferred_stock, None)
+            statement.proceeds_from_issuance_of_preferred_stock, 0)
         self.assertEqual(
             statement.proceeds_from_repurchase_of_equity, 49000000)
-        self.assertEqual(statement.proceeds_from_sale_of_treasury_stock, None)
+        self.assertEqual(statement.proceeds_from_sale_of_treasury_stock, 0)
         self.assertEqual(
             statement.change_in_cash_and_cash_equivalents, -2654000000)
-        self.assertEqual(statement.change_in_exchange_rate, None)
+        self.assertEqual(statement.change_in_exchange_rate, 0)
         self.assertEqual(statement.net_income, 2473000000)
 
     def _from_file(self):
