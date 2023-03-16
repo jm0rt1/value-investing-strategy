@@ -1,5 +1,7 @@
 
-
+from __future__ import annotations
+from pathlib import Path
+from typing import Union
 from src.strategy_system.stocks.stock.components.StockComponent import StockComponent
 
 
@@ -90,6 +92,11 @@ class CashflowReport:
                 "paymentsForOperatingActivities", ""))
         except ValueError as _:
             payments_for_operating_activities = 0
+        try:
+            proceeds_from_issuance_of_long_term_debt_and_capital_securities_net = float(data.get(
+                "proceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet", ""))
+        except ValueError as _:
+            proceeds_from_issuance_of_long_term_debt_and_capital_securities_net = 0
 
         return cls(
             fiscal_date_ending=data.get("fiscalDateEnding", ""),
@@ -122,8 +129,7 @@ class CashflowReport:
                 "dividendPayoutCommonStock", "")),
             dividend_payout_preferred_stock=dividend_payout_preferred_stock,
             proceeds_from_issuance_of_common_stock=proceeds_from_issuance_of_common_stock,
-            proceeds_from_issuance_of_long_term_debt_and_capital_securities_net=float(data.get(
-                "proceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet", "")),
+            proceeds_from_issuance_of_long_term_debt_and_capital_securities_net=proceeds_from_issuance_of_long_term_debt_and_capital_securities_net,
             proceeds_from_issuance_of_preferred_stock=proceeds_from_issuance_of_preferred_stock,
             proceeds_from_repurchase_of_equity=float(data.get(
                 "proceedsFromRepurchaseOfEquity", "")),
@@ -135,5 +141,42 @@ class CashflowReport:
         )
 
 
+@dataclass
 class CashFlow(StockComponent):
-    pass
+    symbol: str
+    annual_reports: list[CashflowReport]
+    quarterly_reports: list[CashflowReport]
+
+    @ classmethod
+    def from_dict(cls, data: dict[str, Union[str, list[dict[str, str]]]]) -> CashFlow:
+        annual_reports: list[CashflowReport] = []
+        quarterly_reports: list[CashflowReport] = []
+
+        raw_annual_reports: list[dict[str, str]
+                                 ] = data.get("annualReports", [])  # type:ignore
+
+        raw_qtrly_reports: list[dict[str, str]
+                                ] = data.get("quarterlyReports", [])  # type:ignore
+
+        if type(raw_annual_reports) is str:
+            raise TypeError("Annual reports should not be a string")
+        if type(raw_qtrly_reports) is str:
+            raise TypeError("Quarterly reports should not be a string")
+
+        for report in raw_annual_reports:
+            annual_reports.append(CashflowReport.from_dict(report))
+        for report in raw_qtrly_reports:
+            quarterly_reports.append(CashflowReport.from_dict(report))
+
+        symbol = data.get("symbol", "")
+        if type(symbol) is not str:
+            raise TypeError("symbol needs to be a string")
+        return cls(
+            symbol=symbol,
+            annual_reports=annual_reports,
+            quarterly_reports=quarterly_reports
+        )
+
+    @classmethod
+    def from_json_file(cls, path: Path):
+        return cls.from_dict(cls.load_json_dict(path))

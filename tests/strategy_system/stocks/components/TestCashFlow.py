@@ -4,7 +4,8 @@ from pathlib import Path
 
 from src.strategy_system.stocks.stock.components.CashFlow import (
     CashflowReport, CashFlow)
-
+TEST_PATH = Path(
+    "tests/test_files/inputs/strategy_system/stocks/stock/components/AAPL.CashFlow.json")
 DATA = {
     "symbol": "ABBV",
     "annualReports": [
@@ -124,18 +125,6 @@ class TestCashFlowReport(unittest.TestCase):
         self.assertEqual(statement.change_in_exchange_rate, 0)
         self.assertEqual(statement.net_income, 2473000000)
 
-    def _from_file(self):
-        with open('sample_income_report.json', 'r') as f:
-            data = json.load(f)
-        income_report = CashflowReport.from_dict(data)
-
-        self.assertEqual(income_report.fiscal_date_ending, "2021-09-30")
-        self.assertEqual(income_report.reported_currency, "USD")
-        self.assertEqual(income_report.gross_profit, 123456.78)
-        self.assertEqual(income_report.total_revenue, 234567.89)
-        self.assertEqual(income_report.cost_of_revenue, 111111.11)
-        # Add more assertions for the remaining attributes
-
 
 class TestCashFlow(unittest.TestCase):
     def test_from_dict(self):
@@ -147,10 +136,9 @@ class TestCashFlow(unittest.TestCase):
         self.assertIsInstance(statement.quarterly_reports[0], CashflowReport)
 
     def test_from_file(self):
-        statement = CashFlow.from_json_file(Path(
-            "scripts/SimpleAlphaVantageCacher/output/json_cache/DATA/AAPL.CashFlow.json"))
+        statement = CashFlow.from_json_file(TEST_PATH)
         self.assertIsInstance(statement, CashFlow)
-        # self.assertEqual(len(statement.annual_reports), 1)
-        # self.assertIsInstance(statement.annual_reports[0], CashFlowReport)
-        # self.assertEqual(len(statement.quarterly_reports), 1)
-        # self.assertIsInstance(statement.quarterly_reports[0], CashFlowReport)
+        self.assertEqual(len(statement.annual_reports), 5)
+        self.assertIsInstance(statement.annual_reports[0], CashflowReport)
+        self.assertEqual(len(statement.quarterly_reports), 20)
+        self.assertIsInstance(statement.quarterly_reports[0], CashflowReport)
