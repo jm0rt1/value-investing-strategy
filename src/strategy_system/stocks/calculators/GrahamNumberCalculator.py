@@ -1,11 +1,11 @@
 # type:ignore
 
-from stocks.calculators.Calculator import Calculator
+# from stocks.calculators.Calculator import Calculator
 
 from src.strategy_system.stocks.stock.Stock import Stock
 
 
-class GrahamNumberCalculator(Calculator):
+class GrahamNumberCalculator():
 
     def __init__(self, stock: Stock):
         self.stock = stock
