@@ -5,7 +5,7 @@ from src.strategy_system.stocks.stock.components.StockComponent import StockComp
 
 
 @dataclass
-class BalanceSheet(StockComponent):
+class BalanceReport(StockComponent):
     fiscal_date_ending: str
     reported_currency: str
     total_assets: float
