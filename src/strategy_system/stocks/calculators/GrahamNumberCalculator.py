@@ -1,7 +1,7 @@
 # type:ignore
 
-
 from stocks.calculators.Calculator import Calculator
+
 from src.strategy_system.stocks.stock.Stock import Stock
 
 
@@ -12,9 +12,9 @@ class GrahamNumberCalculator(Calculator):
 
     def run(self, ):
         self.stock.company_overview.eps
-        self.stock.company_overview.
+        # self.stock.company_overview.
 
-        self.calculate()
+        # self.calculate()
 
     @staticmethod
     def calculate(eps: float, book_value: float):

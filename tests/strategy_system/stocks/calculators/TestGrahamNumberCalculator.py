@@ -1,5 +1,5 @@
 import unittest
-from src.strategy_system.stocks.calculators.GrahamNumberCalculator import GrahamNumberCalculator
+from src.strategy_system.stocks.calculators import GrahamNumberCalculator
 from src.strategy_system.stocks.stock.Stock import Stock
 
 
