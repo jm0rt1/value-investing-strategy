@@ -43,11 +43,11 @@ class IncomeReport():
     def from_dict(cls, data: dict[str, str]) -> 'IncomeReport':
         try:
             depreciation = float(data.get("depreciation", 0))
-        except ValueError as e:
+        except ValueError as _:
             depreciation = 0
         try:
             interest_income = float(data.get("interestIncome", 0))
-        except ValueError as e:
+        except ValueError as _:
             interest_income = 0
         return cls(
             fiscal_date_ending=data.get("fiscalDateEnding", ""),

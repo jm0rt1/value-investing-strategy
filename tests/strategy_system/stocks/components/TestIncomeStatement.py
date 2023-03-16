@@ -1,6 +1,14 @@
-from pathlib import Path
-from src.strategy_system.stocks.stock.components.IncomeStatement import IncomeReport, IncomeStatement
+import json
 import unittest
+from pathlib import Path
+
+from src.strategy_system.stocks.stock.components.IncomeStatement import (
+    IncomeReport, IncomeStatement)
+from src.strategy_system.stocks.StocksInUse import StocksInUse
+
+TEST_FILE = Path(
+    "tests/test_files/inputs/strategy_system/stocks/stock/components/sample_income_report.json")
+
 DATA = {
     "symbol": "AAPL",
     "annualReports": [
@@ -113,9 +121,15 @@ class TestIncomeStatement(unittest.TestCase):
 
     def test_from_file(self):
         statement = IncomeStatement.from_json_file(Path(
-            "scripts/SimpleAlphaVantageCacher/output/json_cache/DATA/AAPL.IncomeStatement.json"))
+            "tests/test_files/inputs/strategy_system/stocks/stock/components/AAPL.IncomeStatement.json"))
         self.assertIsInstance(statement, IncomeStatement)
-        # self.assertEqual(len(statement.annual_reports), 1)
-        # self.assertIsInstance(statement.annual_reports[0], IncomeReport)
-        # self.assertEqual(len(statement.quarterly_reports), 1)
-        # self.assertIsInstance(statement.quarterly_reports[0], IncomeReport)
+        self.assertEqual(len(statement.annual_reports), 5)
+        self.assertIsInstance(statement.annual_reports[0], IncomeReport)
+        self.assertEqual(len(statement.quarterly_reports), 20)
+        self.assertIsInstance(statement.quarterly_reports[0], IncomeReport)
+
+    def test_all_cached(self):
+        tickers = StocksInUse.list_cached_tickers(
+            Path("scripts/SimpleAlphaVantageCacher/output/json_cache/covered.txt"))
+
+        pass
