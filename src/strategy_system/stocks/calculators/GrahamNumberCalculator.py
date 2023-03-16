@@ -1,5 +1,5 @@
 # type:ignore
-
+from __future__ import annotations
 # from stocks.calculators.Calculator import Calculator
 
 from src.strategy_system.stocks.stock.Stock import Stock

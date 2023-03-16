@@ -1,7 +1,7 @@
 # type:ignore
 
 
-from stocks.calculators.Calculator import Calculator
+from src.strategy_system.stocks.calculators.Calculator import Calculator
 
 
 class FinancialMetricAnalysisCalculator(Calculator):
