@@ -1,5 +1,8 @@
 
 
+from pathlib import Path
+
+
 class StocksInUse:
     def __init__(self):
         self.stock_tickers: list[str]
@@ -17,3 +20,9 @@ class StocksInUse:
 
     def get_stock(self, ticker: str):
         pass
+
+    @staticmethod
+    def list_cached_tickers(cache_file: Path) -> list[str]:
+        with open(cache_file, "r") as fp:
+            lines = fp.readlines()
+        return lines
