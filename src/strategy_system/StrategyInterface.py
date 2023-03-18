@@ -102,7 +102,7 @@ class StrategyInterface(abc.ABC):
     def compare_stocks(self, tickers: list[str]):
         pass
 
-    @abc.abstractmethod
     @staticmethod
+    @abc.abstractmethod
     def get_stock(ticker: str) -> Stock:
         pass

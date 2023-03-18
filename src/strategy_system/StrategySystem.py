@@ -1,6 +1,6 @@
 
 
-from StrategyInterface import StrategyInterface
+from src.strategy_system.StrategyInterface import StrategyInterface
 from src.strategy_system.stocks.stock.Stock import Stock, PATH_TO_STOCK_DATA
 from src.strategy_system.stocks.StocksInUse import StocksInUse
 
