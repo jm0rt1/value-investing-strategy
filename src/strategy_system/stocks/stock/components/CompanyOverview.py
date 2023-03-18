@@ -115,4 +115,4 @@ class CompanyOverview(StockComponent):
 
     @classmethod
     def from_json_file(cls, path: Path):
-        pass
+        return cls.from_dict(cls.load_json_dict(path))  # type:ignore

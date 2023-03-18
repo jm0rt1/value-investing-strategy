@@ -77,7 +77,7 @@ class BalanceReport():
 
         try:
             deferred_revenue = float(data.get(
-                "proceedsFromOperatingActivities", ""))
+                "deferredRevenue", ""))
         except ValueError as _:
             deferred_revenue = 0
         return cls(
