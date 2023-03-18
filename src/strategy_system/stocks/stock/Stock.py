@@ -1,9 +1,17 @@
 
 
 from dataclasses import dataclass
-from src.strategy_system.stocks.stock.components import IncomeStatement, Earnings, BalanceSheet, CashFlow, CompanyOverview
+from pathlib import Path
+from src.strategy_system.stocks.stock.components.IncomeStatement import IncomeStatement
+from src.strategy_system.stocks.stock.components.Earnings import EarningsStatement
+from src.strategy_system.stocks.stock.components.BalanceSheet import BalanceSheet
+from src.strategy_system.stocks.stock.components.CashFlow import CashFlow
+from src.strategy_system.stocks.stock.components.CompanyOverview import CompanyOverview
 from src.strategy_system.stocks import calculators as calcs
 from src.strategy_system.stocks.calculators import GrahamNumberCalculator
+
+PATH_TO_STOCK_DATA = Path(
+    "./scripts/SimpleAlphaVantageCacher/output/json_cache/DATA")
 
 
 @dataclass
@@ -27,13 +35,19 @@ class Stock:
     def from_alpha_vantage_data(cls, ticker: str):
 
         income_statement: IncomeStatement = IncomeStatement.from_json_file()
-        earnings: Earnings = Earnings.from_json_file()
+        earnings: EarningsStatement = EarningsStatement.from_json_file()
         balance_sheet: BalanceSheet = BalanceSheet.from_json_file()
         cash_flow: CashFlow = CashFlow.from_json_file()
         company_overview: CompanyOverview = CompanyOverview.from_json_file()
 
         cls(ticker, income_statement, earnings,
             balance_sheet, cash_flow, company_overview)
+
+    @staticmethod
+    def earnings_file_path(ticker: str):
+        path = PATH_TO_STOCK_DATA/f"{ticker}.Earnings.json"
+        if not path.exists():
+            raise
 
     @property
     def graham_number(self):
