@@ -45,8 +45,8 @@ class Stock:
         company_overview: CompanyOverview = CompanyOverview.from_json_file(
             paths.company_overview_file_path)
 
-        cls(ticker, income_statement, earnings,
-            balance_sheet, cash_flow, company_overview)
+        return cls(ticker, income_statement, earnings,
+                   balance_sheet, cash_flow, company_overview)
 
     @property
     def graham_number(self):
