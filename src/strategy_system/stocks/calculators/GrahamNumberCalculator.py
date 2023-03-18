@@ -10,11 +10,8 @@ class GrahamNumberCalculator():
     def __init__(self, stock: Stock):
         self.stock = stock
 
-    def run(self, ):
+    def run(self, ) -> float:
         self.stock.company_overview.eps
-        # self.stock.company_overview.
-
-        # self.calculate()
 
     @staticmethod
     def calculate(eps: float, book_value: float):
