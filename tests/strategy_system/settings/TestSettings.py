@@ -1,7 +1,7 @@
 
 
 from pathlib import Path
-from src.shared.settings import GlobalSettings
+from shared.settings import GlobalSettings
 
 
 class Settings:

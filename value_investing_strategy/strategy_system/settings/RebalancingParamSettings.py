@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from pathlib import Path
-from src.strategy_system.settings.Settings import Settings
+from strategy_system.settings.Settings import Settings
 
 
 class RebalancingParamSettings:

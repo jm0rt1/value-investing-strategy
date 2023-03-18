@@ -1,7 +1,7 @@
 
 # -*- coding: utf-8 -*-
-from src.strategy_system.StrategySystem import StrategySystem
-from src.strategy_system.analysis.Analyzer import Analyzer
+from strategy_system.StrategySystem import StrategySystem
+from strategy_system.analysis.Analyzer import Analyzer
 
 
 class QFAStrategy:
