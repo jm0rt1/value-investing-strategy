@@ -4,6 +4,7 @@ from pathlib import Path
 import unittest
 
 from src.strategy_system.stocks.stock.components.Earnings import EarningsReport, EarningsStatement
+from src.strategy_system.stocks.StocksInUse import StocksInUse
 
 
 TEST_PATH = Path(
@@ -68,12 +69,11 @@ class TestEarningsStatement(unittest.TestCase):
         self.assertIsInstance(statement.quarterly_reports[0], EarningsReport)
 
     def test_from_file(self):
-        statement = EarningsStatement.from_json_file(Path(
-            "tests/test_files/inputs/strategy_system/stocks/stock/components/AAPL.EarningsStatement.json"))
+        statement = EarningsStatement.from_json_file(TEST_PATH)
         self.assertIsInstance(statement, EarningsStatement)
-        self.assertEqual(len(statement.annual_reports), 5)
+        self.assertEqual(len(statement.annual_reports), 28)
         self.assertIsInstance(statement.annual_reports[0], EarningsReport)
-        self.assertEqual(len(statement.quarterly_reports), 20)
+        self.assertEqual(len(statement.quarterly_reports), 108)
         self.assertIsInstance(statement.quarterly_reports[0], EarningsReport)
 
     def test_all_cached(self):

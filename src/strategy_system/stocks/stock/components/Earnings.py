@@ -59,10 +59,10 @@ class EarningsStatement(StockComponent):
         quarterly_reports: list[EarningsReport] = []
 
         raw_annual_reports: list[dict[str, str]
-                                 ] = data.get("annualReports", [])  # type:ignore
+                                 ] = data.get("annualEarnings", [])  # type:ignore
 
         raw_qtrly_reports: list[dict[str, str]
-                                ] = data.get("quarterlyReports", [])  # type:ignore
+                                ] = data.get("quarterlyEarnings", [])  # type:ignore
 
         if type(raw_annual_reports) is str:
             raise TypeError("Annual reports should not be a string")
