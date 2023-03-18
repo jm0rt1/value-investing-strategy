@@ -57,3 +57,9 @@ class TestStock(unittest.TestCase):
         self.assertIsInstance(
             stock.cash_flow.quarterly_reports[0], CashflowReport)
         self.assertIsInstance(stock.company_overview, CompanyOverview)
+
+    def test_graham_number(self):
+        stock = Stock.from_alpha_vantage_data("AAPL", TEST_PATH)
+
+        gn = stock.graham_number
+        pass

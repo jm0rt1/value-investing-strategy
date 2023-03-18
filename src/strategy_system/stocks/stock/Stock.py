@@ -1,6 +1,7 @@
 
 
 from dataclasses import dataclass
+import math
 from pathlib import Path
 from src.strategy_system.stocks.stock.components.IncomeStatement import IncomeStatement
 from src.strategy_system.stocks.stock.components.Earnings import EarningsStatement
@@ -49,7 +50,7 @@ class Stock:
 
     @property
     def graham_number(self):
-        GrahamNumberCalculator(self).run()
+        return GrahamNumberCalculator(self).run()
 
 
 @dataclass
@@ -149,11 +150,17 @@ class GrahamNumberCalculator():
         self.stock = stock
 
     def run(self, ) -> float:
-        self.stock.company_overview.eps
+
+        return self.calculate(self.stock.company_overview.eps, self.stock.company_overview.book_value)
 
     @staticmethod
-    def calculate(eps: float, book_value: float):
-        pass
+    def calculate(eps: float, book_value_per_share: float):
+        multiplier = 22.5  # Graham's multiplier
+
+        # Calculate the Graham Number
+        graham_number = round(
+            math.sqrt(multiplier * eps * book_value_per_share), 2)
+        return graham_number
 
 
 class SharpeRatioCalculator(Calculator):
