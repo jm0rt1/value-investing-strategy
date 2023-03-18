@@ -142,13 +142,13 @@ class CashflowReport:
 
 
 @dataclass
-class CashFlow(StockComponent):
+class Cashflow(StockComponent):
     symbol: str
     annual_reports: list[CashflowReport]
     quarterly_reports: list[CashflowReport]
 
     @ classmethod
-    def from_dict(cls, data: dict[str, Union[str, list[dict[str, str]]]]) -> CashFlow:
+    def from_dict(cls, data: dict[str, Union[str, list[dict[str, str]]]]) -> Cashflow:
         annual_reports: list[CashflowReport] = []
         quarterly_reports: list[CashflowReport] = []
 

@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 from src.strategy_system.stocks.stock.components.CashFlow import (
-    CashflowReport, CashFlow)
+    CashflowReport, Cashflow)
 TEST_PATH = Path(
     "tests/test_files/inputs/strategy_system/stocks/stock/components/AAPL.CashFlow.json")
 DATA = {
@@ -128,16 +128,16 @@ class TestCashFlowReport(unittest.TestCase):
 
 class TestCashFlow(unittest.TestCase):
     def test_from_dict(self):
-        statement = CashFlow.from_dict(DATA)
-        self.assertIsInstance(statement, CashFlow)
+        statement = Cashflow.from_dict(DATA)
+        self.assertIsInstance(statement, Cashflow)
         self.assertEqual(len(statement.annual_reports), 1)
         self.assertIsInstance(statement.annual_reports[0], CashflowReport)
         self.assertEqual(len(statement.quarterly_reports), 1)
         self.assertIsInstance(statement.quarterly_reports[0], CashflowReport)
 
     def test_from_file(self):
-        statement = CashFlow.from_json_file(TEST_PATH)
-        self.assertIsInstance(statement, CashFlow)
+        statement = Cashflow.from_json_file(TEST_PATH)
+        self.assertIsInstance(statement, Cashflow)
         self.assertEqual(len(statement.annual_reports), 5)
         self.assertIsInstance(statement.annual_reports[0], CashflowReport)
         self.assertEqual(len(statement.quarterly_reports), 20)

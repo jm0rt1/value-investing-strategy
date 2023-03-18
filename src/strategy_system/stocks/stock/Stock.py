@@ -3,12 +3,11 @@
 from dataclasses import dataclass
 from pathlib import Path
 from src.strategy_system.stocks.stock.components.IncomeStatement import IncomeStatement
-from src.strategy_system.stocks.stock.components.Earnings import Earnings, EarningsStatement
+from src.strategy_system.stocks.stock.components.Earnings import EarningsStatement
 from src.strategy_system.stocks.stock.components.BalanceSheet import BalanceSheet
-from src.strategy_system.stocks.stock.components.CashFlow import CashFlow
+from src.strategy_system.stocks.stock.components.CashFlow import Cashflow
 from src.strategy_system.stocks.stock.components.CompanyOverview import CompanyOverview
-from src.strategy_system.stocks import calculators as calcs
-from src.strategy_system.stocks.calculators import GrahamNumberCalculator
+
 
 PATH_TO_STOCK_DATA = Path(
     "./scripts/SimpleAlphaVantageCacher/output/json_cache/DATA")
@@ -21,7 +20,7 @@ class Stock:
     income_statement: IncomeStatement
     earnings: EarningsStatement
     balance_sheet: BalanceSheet
-    cash_flow: CashFlow
+    cash_flow: Cashflow
     company_overview: CompanyOverview
     last_updated = None
     symbol = None
@@ -40,7 +39,7 @@ class Stock:
             paths.earnings_file_path)
         balance_sheet: BalanceSheet = BalanceSheet.from_json_file(
             paths.balance_sheet_file_path)
-        cash_flow: CashFlow = CashFlow.from_json_file(
+        cash_flow: Cashflow = Cashflow.from_json_file(
             paths.cash_flow_file_path)
         company_overview: CompanyOverview = CompanyOverview.from_json_file(
             paths.company_overview_file_path)

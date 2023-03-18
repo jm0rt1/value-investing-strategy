@@ -1,8 +1,7 @@
 from __future__ import annotations
 
 import unittest
-from src.strategy_system.stocks.calculators import GrahamNumberCalculator
-from src.strategy_system.stocks.stock.Stock import Stock
+from src.strategy_system.stocks.stock.Stock import Stock, GrahamNumberCalculator
 
 
 class TestGrahamNumberCalculator(unittest.TestCase):
@@ -12,5 +11,6 @@ class TestGrahamNumberCalculator(unittest.TestCase):
         GrahamNumberCalculator(stock)
 
     def test_calculate(self):
+        expected = 1
         out = GrahamNumberCalculator.calculate(45, 52)
         self.assertEqual(expected, out)
