@@ -1,16 +1,17 @@
 
 
 from StrategyInterface import StrategyInterface
+from src.strategy_system.stocks.stock.Stock import Stock, PATH_TO_STOCK_DATA
+from src.strategy_system.stocks.StocksInUse import StocksInUse
+
+
+class StrategySystemError(Exception):
+    pass
 
 
 class StrategySystem(StrategyInterface):
     def __init__(self):
         self.Attribute1 = None
-
-    def __init__(self, ):
-        pass
-
-
 
     def get_QFAStrategy(self, uid: str):
         pass
@@ -71,3 +72,19 @@ class StrategySystem(StrategyInterface):
 
     def compare_stocks(self, tickers):
         pass
+
+    @staticmethod
+    def raise_error_if_ticker_not_avaialable(ticker: str):
+        if ticker not in StrategySystem.get_available_stocks():
+            raise StrategySystemError("Ticker is not avaialable")
+
+    @staticmethod
+    def get_available_stocks() -> list[str]:
+        return StocksInUse.list_cached_tickers(
+            PATH_TO_STOCK_DATA.parent/"covered.txt")
+
+    @staticmethod
+    def get_stock(ticker: str):
+        StrategySystem.raise_error_if_ticker_not_avaialable(ticker)
+
+        return Stock.from_alpha_vantage_data(ticker)

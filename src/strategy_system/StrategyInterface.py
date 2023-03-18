@@ -5,6 +5,7 @@ import abc
 from src.strategy_system.analysis.QFAnalyzer import QFAnalyzer
 from src.strategy_system.analysis.RebalancingAnalyzer import RebalancingAnalyzer
 from src.strategy_system.settings.Settings import Settings
+from src.strategy_system.stocks.stock.Stock import Stock
 
 
 class StrategyInterface(abc.ABC):
@@ -102,5 +103,6 @@ class StrategyInterface(abc.ABC):
         pass
 
     @abc.abstractmethod
-    def get_stock(self, ticker: str):
+    @staticmethod
+    def get_stock(ticker: str) -> Stock:
         pass
