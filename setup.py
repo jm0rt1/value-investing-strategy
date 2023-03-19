@@ -15,6 +15,7 @@ setup(
     version="0.1",
     packages=find_packages(),
     package_data={'value_investing_strategy': ['scripts/*']},
+    include_package_data=True,
     description="",
     install_requires=open('requirements.txt').readlines(),
     author="James Mortensen",
