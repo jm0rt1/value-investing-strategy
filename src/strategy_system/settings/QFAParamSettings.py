@@ -1,7 +1,7 @@
 
 # -*- coding: utf-8 -*-
 
-from strategy_system.settings import QFAnalyzerSettings
+from value_investing_strategy.strategy_system.settings import QFAnalyzerSettings
 
 
 class QFAParamSettings:
