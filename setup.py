@@ -11,9 +11,10 @@ if sys.platform == "win32":
     base = "Win32GUI"
 
 setup(
-    name="value-investing-strategy",
+    name="value_investing_strategy",
     version="0.1",
     description="",
+    install_requires=open('requirements.txt').readlines(),
     author="James Mortensen",
     autho_email="jmortens@syr.edu",
     url="https://github.com/jm0rt1/CSE682-Project"
