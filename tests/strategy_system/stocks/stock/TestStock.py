@@ -3,14 +3,14 @@ from __future__ import annotations
 
 import unittest
 
-from strategy_system.stocks.stock.Stock import Stock
+from src.strategy_system.stocks.stock.Stock import Stock
 from pathlib import Path
 
-from strategy_system.stocks.stock.components.BalanceSheet import BalanceReport
-from strategy_system.stocks.stock.components.IncomeStatement import IncomeStatement, IncomeReport
-from strategy_system.stocks.stock.components.Earnings import EarningsReport, EarningsStatement
-from strategy_system.stocks.stock.components.CashFlow import Cashflow, CashflowReport
-from strategy_system.stocks.stock.components.CompanyOverview import CompanyOverview
+from src.strategy_system.stocks.stock.components.BalanceSheet import BalanceReport
+from src.strategy_system.stocks.stock.components.IncomeStatement import IncomeStatement, IncomeReport
+from src.strategy_system.stocks.stock.components.Earnings import EarningsReport, EarningsStatement
+from src.strategy_system.stocks.stock.components.CashFlow import Cashflow, CashflowReport
+from src.strategy_system.stocks.stock.components.CompanyOverview import CompanyOverview
 
 
 TEST_PATH = Path(

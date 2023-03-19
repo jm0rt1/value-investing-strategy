@@ -1,8 +1,8 @@
 
 # -*- coding: utf-8 -*-
 
-from strategy_system.analysis.Analyzer import Analyzer
-from strategy_system.settings.RebalancingAnalyzerSettings import RebalancingAnalyzerSettings
+from src.strategy_system.analysis.Analyzer import Analyzer
+from src.strategy_system.settings.RebalancingAnalyzerSettings import RebalancingAnalyzerSettings
 
 
 class RebalancingAnalyzer(Analyzer):

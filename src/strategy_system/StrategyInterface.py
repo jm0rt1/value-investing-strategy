@@ -2,10 +2,10 @@
 
 import abc
 
-from strategy_system.analysis.QFAnalyzer import QFAnalyzer
-from strategy_system.analysis.RebalancingAnalyzer import RebalancingAnalyzer
-from strategy_system.settings.Settings import Settings
-from strategy_system.stocks.stock.Stock import Stock
+from src.strategy_system.analysis.QFAnalyzer import QFAnalyzer
+from src.strategy_system.analysis.RebalancingAnalyzer import RebalancingAnalyzer
+from src.strategy_system.settings.Settings import Settings
+from src.strategy_system.stocks.stock.Stock import Stock
 
 
 class StrategyInterface(abc.ABC):

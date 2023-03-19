@@ -1,8 +1,8 @@
 
 
-from strategy_system.StrategyInterface import StrategyInterface
-from strategy_system.stocks.stock.Stock import Stock, PATH_TO_STOCK_DATA
-from strategy_system.stocks.StocksInUse import StocksInUse
+from src.strategy_system.StrategyInterface import StrategyInterface
+from src.strategy_system.stocks.stock.Stock import Stock, PATH_TO_STOCK_DATA
+from src.strategy_system.stocks.StocksInUse import StocksInUse
 
 
 class StrategySystemError(Exception):

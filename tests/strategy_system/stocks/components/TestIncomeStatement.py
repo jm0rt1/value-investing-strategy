@@ -2,9 +2,9 @@ import json
 import unittest
 from pathlib import Path
 
-from strategy_system.stocks.stock.components.IncomeStatement import (
+from src.strategy_system.stocks.stock.components.IncomeStatement import (
     IncomeReport, IncomeStatement)
-from strategy_system.stocks.StocksInUse import StocksInUse
+from src.strategy_system.stocks.StocksInUse import StocksInUse
 
 TEST_FILE = Path(
     "tests/test_files/inputs/strategy_system/stocks/stock/components/sample_income_report.json")
