@@ -59,7 +59,20 @@ class CompanyOverview(StockComponent):
 
     @classmethod
     def from_dict(cls, data: dict[str, str]):
+        try:
+            ebitda = float(data.get("EBITDA", 0))
+        except ValueError as _:
+            ebitda = 0
 
+        try:
+            ev_to_revenue = float(data.get("EVToRevenue", 0))
+        except ValueError as _:
+            ev_to_revenue = 0
+
+        try:
+            ev_to_ebitda = float(data.get("EVToEBITDA", 0))
+        except ValueError as _:
+            ev_to_ebitda = 0
         return cls(
             symbol=data.get("Symbol", ""),
             asset_type=data.get("AssetType", ""),
@@ -75,7 +88,7 @@ class CompanyOverview(StockComponent):
             fiscal_year_end=data.get("FiscalYearEnd", ""),
             latest_quarter=data.get("LatestQuarter", ""),
             market_capitalization=float(data.get("MarketCapitalization", 0)),
-            ebitda=float(data.get("EBITDA", 0)),
+            ebitda=ebitda,
             pe_ratio=float(data.get("PERatio", 0)),
             peg_ratio=float(data.get("PEGRatio", 0)),
             book_value=float(data.get("BookValue", 0)),
@@ -99,8 +112,8 @@ class CompanyOverview(StockComponent):
             forward_pe=float(data.get("ForwardPE", 0)),
             price_to_sales_ratio=float(data.get("PriceToSalesRatioTTM", 0)),
             price_to_book_ratio=float(data.get("PriceToBookRatio", 0)),
-            ev_to_revenue=float(data.get("EVToRevenue", 0)),
-            ev_to_ebitda=float(data.get("EVToEBITDA", 0)),
+            ev_to_revenue=ev_to_revenue,
+            ev_to_ebitda=ev_to_ebitda,
             beta=float(data.get("Beta", 0)),
             fifty_two_week_high=float(data.get("52WeekHigh", 0)),
             fifty_two_week_low=float(data.get("52WeekLow", 0)),

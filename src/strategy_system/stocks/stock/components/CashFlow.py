@@ -97,22 +97,38 @@ class CashflowReport:
                 "proceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet", ""))
         except ValueError as _:
             proceeds_from_issuance_of_long_term_debt_and_capital_securities_net = 0
-
+        try:
+            change_in_operating_liabilities = float(data.get(
+                "changeInOperatingLiabilities", ""))
+        except ValueError as _:
+            change_in_operating_liabilities = 0
+        try:
+            change_in_receivables = float(data.get("changeInReceivables", ""))
+        except ValueError as _:
+            change_in_receivables = 0
+        try:
+            change_in_inventory = float(data.get("changeInInventory", ""))
+        except ValueError as _:
+            change_in_inventory = 0
+        try:
+            proceeds_from_issuance_of_long_term_debt_and_capital_securities_net = float(data.get(
+                "proceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet", ""))
+        except ValueError as _:
+            proceeds_from_issuance_of_long_term_debt_and_capital_securities_net = 0
         return cls(
             fiscal_date_ending=data.get("fiscalDateEnding", ""),
             reported_currency=data.get("reportedCurrency", ""),
             operating_cashflow=float(data.get("operatingCashflow", "")),
             payments_for_operating_activities=payments_for_operating_activities,
             proceeds_from_operating_activities=proceeds_from_operating_activities,
-            change_in_operating_liabilities=float(data.get(
-                "changeInOperatingLiabilities", "")),
+            change_in_operating_liabilities=change_in_operating_liabilities,
             change_in_operating_assets=float(
                 data.get("changeInOperatingAssets", "")),
             depreciation_depletion_and_amortization=float(data.get(
                 "depreciationDepletionAndAmortization", "")),
             capital_expenditures=float(data.get("capitalExpenditures", "")),
-            change_in_receivables=float(data.get("changeInReceivables", "")),
-            change_in_inventory=float(data.get("changeInInventory", "")),
+            change_in_receivables=change_in_receivables,
+            change_in_inventory=change_in_inventory,
             profit_loss=float(data.get("profitLoss", "")),
             cash_flow_from_investment=float(
                 data.get("cashflowFromInvestment", "")),

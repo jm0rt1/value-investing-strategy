@@ -126,34 +126,37 @@ class IncomeReport():
         except ValueError as _:
             depreciation = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            net_interest_income = float(data.get("netInterestIncome", 0))
         except ValueError as _:
-            depreciation = 0
+            net_interest_income = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            non_interest_income = float(data.get("nonInterestIncome", 0))
         except ValueError as _:
-            depreciation = 0
+            non_interest_income = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            interest_and_debt_expense = float(
+                data.get("interestAndDebtExpense", 0))
         except ValueError as _:
-            depreciation = 0
+            interest_and_debt_expense = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            other_non_operating_income = float(
+                data.get("otherNonOperatingIncome", 0))
         except ValueError as _:
-            depreciation = 0
+            other_non_operating_income = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            investment_income_net = float(data.get("investmentIncomeNet", 0))
         except ValueError as _:
-            depreciation = 0
+            investment_income_net = 0
 
-        try:
-            depreciation = float(data.get("depreciation", 0))
-        except ValueError as _:
-            depreciation = 0
         try:
             interest_income = float(data.get("interestIncome", 0))
         except ValueError as _:
             interest_income = 0
+        try:
+            research_and_development = float(
+                data.get("researchAndDevelopment", 0))
+        except ValueError as _:
+            research_and_development = 0
 
         return cls(
             fiscal_date_ending=data.get("fiscalDateEnding", ""),
@@ -166,11 +169,10 @@ class IncomeReport():
             operating_income=float(data.get("operatingIncome", 0)),
             selling_general_and_administrative=float(
                 data.get("sellingGeneralAndAdministrative", 0)),
-            research_and_development=float(
-                data.get("researchAndDevelopment", 0)),
+            research_and_development=research_and_development,
             operating_expenses=float(data.get("operatingExpenses", 0)),
-            investment_income_net=float(data.get("investmentIncomeNet", 0)),
-            net_interest_income=float(data.get("netInterestIncome", 0)),
+            investment_income_net=investment_income_net,
+            net_interest_income=net_interest_income,
             interest_income=interest_income,
             interest_expense=float(data.get("interestExpense", 0)),
             depreciation=depreciation,
@@ -178,8 +180,7 @@ class IncomeReport():
                 data.get("depreciationAndAmortization", 0)),
             income_before_tax=float(data.get("incomeBeforeTax", 0)),
             income_tax_expense=float(data.get("incomeTaxExpense", 0)),
-            interest_and_debt_expense=float(
-                data.get("interestAndDebtExpense", 0)),
+            interest_and_debt_expense=interest_and_debt_expense,
             net_income_from_continuing_operations=float(
                 data.get("netIncomeFromContinuingOperations", 0)),
             comprehensive_income_net_of_tax=float(
@@ -190,10 +191,8 @@ class IncomeReport():
                 data.get("ebitda", 0)),
             net_income=float(
                 data.get("netIncome", 0)),
-            non_interest_income=float(data.get("nonInterestIncome", 0)),
-            other_non_operating_income=float(
-                data.get("otherNonOperatingIncome", 0))
-        )
+            non_interest_income=non_interest_income,
+            other_non_operating_income=other_non_operating_income)
 
 
 @ dataclass
