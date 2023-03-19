@@ -3,11 +3,11 @@
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List,  Union
-from src.strategy_system.stocks.stock.components.StockComponent import StockComponent
+from strategy_system.stocks.stock.components.StockComponent import StockComponent
 
 
 from dataclasses import dataclass
-from src.strategy_system.stocks.stock.components.StockComponent import StockComponent
+from strategy_system.stocks.stock.components.StockComponent import StockComponent
 
 
 @dataclass

@@ -1,5 +1,5 @@
 import sys
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # Dependencies are automatically detected, but it might need fine tuning.
 # "packages": ["os"] is used as example only
@@ -13,6 +13,7 @@ if sys.platform == "win32":
 setup(
     name="value_investing_strategy",
     version="0.1",
+    packages=find_packages(),
     description="",
     install_requires=open('requirements.txt').readlines(),
     author="James Mortensen",
