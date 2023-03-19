@@ -3,8 +3,8 @@
 from pathlib import Path
 import unittest
 
-from strategy_system.stocks.stock.components.Earnings import EarningsReport, EarningsStatement
-from strategy_system.stocks.StocksInUse import StocksInUse
+from src.strategy_system.stocks.stock.components.Earnings import EarningsReport, EarningsStatement
+from src.strategy_system.stocks.StocksInUse import StocksInUse
 
 
 TEST_PATH = Path(
