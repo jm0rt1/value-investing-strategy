@@ -36,10 +36,18 @@ class EarningsReport():
             surprise_percentage = float(data.get("surprisePercentage", ""))
         except ValueError as _:
             surprise_percentage = None
+        try:
+            fiscal_date_ending = str(data.get("fiscalDateEnding", ""))
 
+        except ValueError as _:
+            fiscal_date_ending = ""
+        try:
+            reported_eps = float(data.get("reportedEPS", ""))
+        except ValueError as _:
+            reported_eps = 0
         return cls(
-            fiscal_date_ending=str(data.get("fiscalDateEnding", "")),
-            reported_eps=float(data.get("reportedEPS", "")),
+            fiscal_date_ending=fiscal_date_ending,
+            reported_eps=reported_eps,
             reported_date=reported_date,
             estimated_eps=estimated_eps,
             surprise=surprise,

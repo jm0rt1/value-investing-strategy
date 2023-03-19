@@ -69,6 +69,7 @@ class BalanceReport():
                 "proceedsFromOperatingActivities", ""))
         except ValueError as _:
             capital_lease_obligations = 0
+
         try:
             treasury_stock = float(data.get(
                 "proceedsFromOperatingActivities", ""))
@@ -146,22 +147,118 @@ class BalanceReport():
             short_term_debt = float(data.get("shortTermDebt", ""))
         except ValueError as _:
             short_term_debt = 0
+        try:
+            fiscal_date_ending = data.get("fiscalDateEnding", "")
+        except ValueError as _:
+            fiscal_date_ending = ""
+        try:
+            reported_currency = data.get("reportedCurrency", "")
+        except ValueError as _:
+            reported_currency = ""
+        try:
+            total_assets = float(data.get("totalAssets", ""))
+        except ValueError as _:
+            total_assets = 0
+        try:
+            total_current_assets = float(data.get("totalCurrentAssets", ""))
+        except ValueError as _:
+            total_current_assets = 0
+        try:
+            cash_and_cash_equivalents_at_carrying_value = float(data.get(
+                "cashAndCashEquivalentsAtCarryingValue", ""))
+        except ValueError as _:
+            cash_and_cash_equivalents_at_carrying_value = 0
+        try:
+            cash_and_short_term_investments = float(data.get(
+                "cashAndShortTermInvestments", ""))
+        except ValueError as _:
+            cash_and_short_term_investments = 0
+        try:
+            total_non_current_assets = float(
+                data.get("totalNonCurrentAssets", ""))
+        except ValueError as _:
+            total_non_current_assets = 0
+        try:
+            property_plant_equipment = float(
+                data.get("propertyPlantEquipment", ""))
+        except ValueError as _:
+            property_plant_equipment = 0
+        try:
+            other_current_assets = float(data.get("otherCurrentAssets", ""))
+        except ValueError as _:
+            other_current_assets = 0
+        try:
+            total_liabilities = float(data.get("totalLiabilities", ""))
+        except ValueError as _:
+            total_liabilities = 0
+        try:
+            total_current_liabilities = float(
+                data.get("totalCurrentLiabilities", ""))
+        except ValueError as _:
+            total_current_liabilities = 0
+        try:
+            total_non_current_liabilities = float(data.get(
+                "totalNonCurrentLiabilities", ""))
+        except ValueError as _:
+            total_non_current_liabilities = 0
+        try:
+            long_term_debt = float(data.get("longTermDebt", ""))
+        except ValueError as _:
+            long_term_debt = 0
+        try:
+            current_long_term_debt = float(data.get("currentLongTermDebt", ""))
+        except ValueError as _:
+            current_long_term_debt = 0
+        try:
+            long_term_debt_noncurrent = float(
+                data.get("longTermDebtNoncurrent", ""))
+        except ValueError as _:
+            long_term_debt_noncurrent = 0
+        try:
+            short_long_term_debt_total = float(
+                data.get("shortLongTermDebtTotal", ""))
+        except ValueError as _:
+            short_long_term_debt_total = 0
+        try:
+            other_current_liabilities = float(
+                data.get("otherCurrentLiabilities", ""))
+        except ValueError as _:
+            other_current_liabilities = 0
+        try:
+            other_non_current_liabilities = float(data.get(
+                "otherNonCurrentLiabilities", ""))
+        except ValueError as _:
+            other_non_current_liabilities = 0
+        try:
+            total_shareholder_equity = float(
+                data.get("totalShareholderEquity", ""))
+        except ValueError as _:
+            total_shareholder_equity = 0
+        try:
+            retained_earnings = float(data.get("retainedEarnings", ""))
+        except ValueError as _:
+            retained_earnings = 0
+        try:
+            common_stock = float(data.get("commonStock", ""))
 
+        except ValueError as _:
+            common_stock = 0
+        try:
+            common_stock_shares_outstanding = float(data.get(
+                "commonStockSharesOutstanding", ""))
+        except ValueError as _:
+            common_stock_shares_outstanding = 0
         return cls(
-            fiscal_date_ending=data.get("fiscalDateEnding", ""),
-            reported_currency=data.get("reportedCurrency", ""),
-            total_assets=float(data.get("totalAssets", "")),
-            total_current_assets=float(data.get("totalCurrentAssets", "")),
-            cash_and_cash_equivalents_at_carrying_value=float(data.get(
-                "cashAndCashEquivalentsAtCarryingValue", "")),
-            cash_and_short_term_investments=float(data.get(
-                "cashAndShortTermInvestments", "")),
+            fiscal_date_ending=fiscal_date_ending,
+            reported_currency=reported_currency,
+            total_assets=total_assets,
+            total_current_assets=total_current_assets,
+            cash_and_cash_equivalents_at_carrying_value=cash_and_cash_equivalents_at_carrying_value,
+            cash_and_short_term_investments=cash_and_short_term_investments,
             inventory=inventory,
             current_net_receivables=current_net_receivables,
-            total_non_current_assets=float(
-                data.get("totalNonCurrentAssets", "")),
-            property_plant_equipment=float(
-                data.get("propertyPlantEquipment", "")),
+            total_non_current_assets=total_non_current_assets,
+            property_plant_equipment=property_plant_equipment,
             accumulated_depreciation_amortization_ppe=accumulated_depreciation_amortization_ppe,
             intangible_assets=intangible_assets,
             intangible_assets_excluding_goodwill=intangible_assets_excluding_goodwill,
@@ -169,35 +266,27 @@ class BalanceReport():
             investments=investments,
             long_term_investments=long_term_investments,
             short_term_investments=short_term_investments,
-            other_current_assets=float(data.get("otherCurrentAssets", "")),
+            other_current_assets=other_current_assets,
             other_non_current_assets=other_non_current_assets,
-            total_liabilities=float(data.get("totalLiabilities", "")),
-            total_current_liabilities=float(
-                data.get("totalCurrentLiabilities", "")),
+            total_liabilities=total_liabilities,
+            total_current_liabilities=total_current_liabilities,
             current_accounts_payable=current_accounts_payable,
             deferred_revenue=deferred_revenue,
             current_debt=current_debt,
             short_term_debt=short_term_debt,
-            total_non_current_liabilities=float(data.get(
-                "totalNonCurrentLiabilities", "")),
+            total_non_current_liabilities=total_non_current_liabilities,
             capital_lease_obligations=capital_lease_obligations,
-            long_term_debt=float(data.get("longTermDebt", "")),
-            current_long_term_debt=float(data.get("currentLongTermDebt", "")),
-            long_term_debt_noncurrent=float(
-                data.get("longTermDebtNoncurrent", "")),
-            short_long_term_debt_total=float(
-                data.get("shortLongTermDebtTotal", "")),
-            other_current_liabilities=float(
-                data.get("otherCurrentLiabilities", "")),
-            other_non_current_liabilities=float(data.get(
-                "otherNonCurrentLiabilities", "")),
-            total_shareholder_equity=float(
-                data.get("totalShareholderEquity", "")),
+            long_term_debt=long_term_debt,
+            current_long_term_debt=current_long_term_debt,
+            long_term_debt_noncurrent=long_term_debt_noncurrent,
+            short_long_term_debt_total=short_long_term_debt_total,
+            other_current_liabilities=other_current_liabilities,
+            other_non_current_liabilities=other_non_current_liabilities,
+            total_shareholder_equity=total_shareholder_equity,
             treasury_stock=treasury_stock,
-            retained_earnings=float(data.get("retainedEarnings", "")),
-            common_stock=float(data.get("commonStock", "")),
-            common_stock_shares_outstanding=float(data.get(
-                "commonStockSharesOutstanding", "")))
+            retained_earnings=retained_earnings,
+            common_stock=common_stock,
+            common_stock_shares_outstanding=common_stock_shares_outstanding)
 
 
 @dataclass

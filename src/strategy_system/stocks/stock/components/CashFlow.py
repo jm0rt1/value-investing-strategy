@@ -115,45 +115,111 @@ class CashflowReport:
                 "proceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet", ""))
         except ValueError as _:
             proceeds_from_issuance_of_long_term_debt_and_capital_securities_net = 0
+
+        try:
+            fiscal_date_ending = data.get("fiscalDateEnding", "")
+        except ValueError as _:
+            fiscal_date_ending = ""
+        try:
+            reported_currency = data.get("reportedCurrency", "")
+        except ValueError as _:
+            reported_currency = ""
+        try:
+            operating_cashflow = float(data.get("operatingCashflow", ""))
+        except ValueError as _:
+            operating_cashflow = 0
+        try:
+            change_in_operating_assets = float(
+                data.get("changeInOperatingAssets", ""))
+        except ValueError as _:
+            change_in_operating_assets = 0
+        try:
+            depreciation_depletion_and_amortization = float(data.get(
+                "depreciationDepletionAndAmortization", ""))
+        except ValueError as _:
+            depreciation_depletion_and_amortization = 0
+        try:
+            capital_expenditures = float(data.get("capitalExpenditures", ""))
+        except ValueError as _:
+            capital_expenditures = 0
+        try:
+            profit_loss = float(data.get("profitLoss", ""))
+        except ValueError as _:
+            profit_loss = 0
+        try:
+            cash_flow_from_investment = float(
+                data.get("cashflowFromInvestment", ""))
+        except ValueError as _:
+            cash_flow_from_investment = 0
+        try:
+            cash_flow_from_financing = float(
+                data.get("cashflowFromFinancing", ""))
+        except ValueError as _:
+            cash_flow_from_financing = 0
+        try:
+            payments_for_repurchase_of_common_stock = float(data.get(
+                "paymentsForRepurchaseOfCommonStock", ""))
+        except ValueError as _:
+            payments_for_repurchase_of_common_stock = 0
+        try:
+            payments_for_repurchase_of_equity = float(data.get(
+                "paymentsForRepurchaseOfEquity", ""))
+        except ValueError as _:
+            payments_for_repurchase_of_equity = 0
+        try:
+            dividend_payout = float(data.get("dividendPayout", ""))
+        except ValueError as _:
+            dividend_payout = 0
+        try:
+            dividend_payout_common_stock = float(data.get(
+                "dividendPayoutCommonStock", ""))
+        except ValueError as _:
+            dividend_payout_common_stock = 0
+        try:
+            proceeds_from_repurchase_of_equity = float(data.get(
+                "proceedsFromRepurchaseOfEquity", ""))
+        except ValueError as _:
+            proceeds_from_repurchase_of_equity = 0
+        try:
+            change_in_cash_and_cash_equivalents = float(data.get(
+                "changeInCashAndCashEquivalents", ""))
+        except ValueError as _:
+            change_in_cash_and_cash_equivalents = 0
+
+        try:
+            net_income = float(data.get("netIncome", ""))
+        except ValueError as _:
+            net_income = 0
         return cls(
-            fiscal_date_ending=data.get("fiscalDateEnding", ""),
-            reported_currency=data.get("reportedCurrency", ""),
-            operating_cashflow=float(data.get("operatingCashflow", "")),
+            fiscal_date_ending=fiscal_date_ending,
+            reported_currency=reported_currency,
+            operating_cashflow=operating_cashflow,
             payments_for_operating_activities=payments_for_operating_activities,
             proceeds_from_operating_activities=proceeds_from_operating_activities,
             change_in_operating_liabilities=change_in_operating_liabilities,
-            change_in_operating_assets=float(
-                data.get("changeInOperatingAssets", "")),
-            depreciation_depletion_and_amortization=float(data.get(
-                "depreciationDepletionAndAmortization", "")),
-            capital_expenditures=float(data.get("capitalExpenditures", "")),
+            change_in_operating_assets=change_in_operating_assets,
+            depreciation_depletion_and_amortization=depreciation_depletion_and_amortization,
+            capital_expenditures=capital_expenditures,
             change_in_receivables=change_in_receivables,
             change_in_inventory=change_in_inventory,
-            profit_loss=float(data.get("profitLoss", "")),
-            cash_flow_from_investment=float(
-                data.get("cashflowFromInvestment", "")),
-            cash_flow_from_financing=float(
-                data.get("cashflowFromFinancing", "")),
+            profit_loss=profit_loss,
+            cash_flow_from_investment=cash_flow_from_investment,
+            cash_flow_from_financing=cash_flow_from_financing,
             proceeds_from_repayments_of_short_term_debt=proceeds_from_repayments_of_short_term_debt,
-            payments_for_repurchase_of_common_stock=float(data.get(
-                "paymentsForRepurchaseOfCommonStock", "")),
-            payments_for_repurchase_of_equity=float(data.get(
-                "paymentsForRepurchaseOfEquity", "")),
+            payments_for_repurchase_of_common_stock=payments_for_repurchase_of_common_stock,
+            payments_for_repurchase_of_equity=payments_for_repurchase_of_equity,
             payments_for_repurchase_of_preferred_stock=payments_for_repurchase_of_preferred_stock,
-            dividend_payout=float(data.get("dividendPayout", "")),
-            dividend_payout_common_stock=float(data.get(
-                "dividendPayoutCommonStock", "")),
+            dividend_payout=dividend_payout,
+            dividend_payout_common_stock=dividend_payout_common_stock,
             dividend_payout_preferred_stock=dividend_payout_preferred_stock,
             proceeds_from_issuance_of_common_stock=proceeds_from_issuance_of_common_stock,
             proceeds_from_issuance_of_long_term_debt_and_capital_securities_net=proceeds_from_issuance_of_long_term_debt_and_capital_securities_net,
             proceeds_from_issuance_of_preferred_stock=proceeds_from_issuance_of_preferred_stock,
-            proceeds_from_repurchase_of_equity=float(data.get(
-                "proceedsFromRepurchaseOfEquity", "")),
+            proceeds_from_repurchase_of_equity=proceeds_from_repurchase_of_equity,
             proceeds_from_sale_of_treasury_stock=proceeds_from_sale_of_treasury_stock,
-            change_in_cash_and_cash_equivalents=float(data.get(
-                "changeInCashAndCashEquivalents", "")),
+            change_in_cash_and_cash_equivalents=change_in_cash_and_cash_equivalents,
             change_in_exchange_rate=change_in_exchange_rate,
-            net_income=float(data.get("netIncome", "")),
+            net_income=net_income,
         )
 
 

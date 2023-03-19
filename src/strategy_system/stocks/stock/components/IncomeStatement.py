@@ -41,86 +41,84 @@ class IncomeReport():
 
     @classmethod
     def from_dict(cls, data: dict[str, str]) -> 'IncomeReport':
+
         try:
-            depreciation = float(data.get("depreciation", 0))
+            fiscal_date_ending = data.get("fiscalDateEnding", "")
         except ValueError as _:
-            depreciation = 0
+            fiscal_date_ending = ""
         try:
-            depreciation = float(data.get("depreciation", 0))
+            reported_currency = data.get("reportedCurrency", "")
         except ValueError as _:
-            depreciation = 0
+            reported_currency = ""
         try:
-            depreciation = float(data.get("depreciation", 0))
+            gross_profit = float(data.get("grossProfit", 0))
         except ValueError as _:
-            depreciation = 0
+            gross_profit = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            total_revenue = float(data.get("totalRevenue", 0))
         except ValueError as _:
-            depreciation = 0
+            total_revenue = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            cost_of_revenue = float(data.get("costOfRevenue", 0))
         except ValueError as _:
-            depreciation = 0
+            cost_of_revenue = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            cost_of_goods_and_services_sold = float(
+                data.get("costofGoodsAndServicesSold", 0))
         except ValueError as _:
-            depreciation = 0
+            cost_of_goods_and_services_sold = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            operating_income = float(data.get("operatingIncome", 0))
         except ValueError as _:
-            depreciation = 0
+            operating_income = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            selling_general_and_administrative = float(
+                data.get("sellingGeneralAndAdministrative", 0))
         except ValueError as _:
-            depreciation = 0
+            selling_general_and_administrative = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            operating_expenses = float(data.get("operatingExpenses", 0))
         except ValueError as _:
-            depreciation = 0
+            operating_expenses = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            interest_expense = float(data.get("interestExpense", 0))
         except ValueError as _:
-            depreciation = 0
+            interest_expense = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            depreciation_and_amortization = float(
+                data.get("depreciationAndAmortization", 0))
         except ValueError as _:
-            depreciation = 0
+            depreciation_and_amortization = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            income_before_tax = float(data.get("incomeBeforeTax", 0))
         except ValueError as _:
-            depreciation = 0
+            income_before_tax = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            income_tax_expense = float(data.get("incomeTaxExpense", 0))
         except ValueError as _:
-            depreciation = 0
+            income_tax_expense = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            net_income_from_continuing_operations = float(
+                data.get("netIncomeFromContinuingOperations", 0))
         except ValueError as _:
-            depreciation = 0
+            net_income_from_continuing_operations = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            comprehensive_income_net_of_tax = float(
+                data.get("comprehensiveIncomeNetOfTax", 0))
         except ValueError as _:
-            depreciation = 0
+            comprehensive_income_net_of_tax = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            ebit = float(data.get("ebit", 0))
         except ValueError as _:
-            depreciation = 0
+            ebit = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            ebitda = float(data.get("ebitda", 0))
         except ValueError as _:
-            depreciation = 0
+            ebitda = 0
         try:
-            depreciation = float(data.get("depreciation", 0))
+            net_income = float(data.get("netIncome", 0))
         except ValueError as _:
-            depreciation = 0
-        try:
-            depreciation = float(data.get("depreciation", 0))
-        except ValueError as _:
-            depreciation = 0
-        try:
-            depreciation = float(data.get("depreciation", 0))
-        except ValueError as _:
-            depreciation = 0
+            net_income = 0
         try:
             depreciation = float(data.get("depreciation", 0))
         except ValueError as _:
@@ -159,38 +157,30 @@ class IncomeReport():
             research_and_development = 0
 
         return cls(
-            fiscal_date_ending=data.get("fiscalDateEnding", ""),
-            reported_currency=data.get("reportedCurrency", ""),
-            gross_profit=float(data.get("grossProfit", 0)),
-            total_revenue=float(data.get("totalRevenue", 0)),
-            cost_of_revenue=float(data.get("costOfRevenue", 0)),
-            cost_of_goods_and_services_sold=float(
-                data.get("costofGoodsAndServicesSold", 0)),
-            operating_income=float(data.get("operatingIncome", 0)),
-            selling_general_and_administrative=float(
-                data.get("sellingGeneralAndAdministrative", 0)),
+            fiscal_date_ending=fiscal_date_ending,
+            reported_currency=reported_currency,
+            gross_profit=gross_profit,
+            total_revenue=total_revenue,
+            cost_of_revenue=cost_of_revenue,
+            cost_of_goods_and_services_sold=cost_of_goods_and_services_sold,
+            operating_income=operating_income,
+            selling_general_and_administrative=selling_general_and_administrative,
             research_and_development=research_and_development,
-            operating_expenses=float(data.get("operatingExpenses", 0)),
+            operating_expenses=operating_expenses,
             investment_income_net=investment_income_net,
             net_interest_income=net_interest_income,
             interest_income=interest_income,
-            interest_expense=float(data.get("interestExpense", 0)),
+            interest_expense=interest_expense,
             depreciation=depreciation,
-            depreciation_and_amortization=float(
-                data.get("depreciationAndAmortization", 0)),
-            income_before_tax=float(data.get("incomeBeforeTax", 0)),
-            income_tax_expense=float(data.get("incomeTaxExpense", 0)),
+            depreciation_and_amortization=depreciation_and_amortization,
+            income_before_tax=income_before_tax,
+            income_tax_expense=income_tax_expense,
             interest_and_debt_expense=interest_and_debt_expense,
-            net_income_from_continuing_operations=float(
-                data.get("netIncomeFromContinuingOperations", 0)),
-            comprehensive_income_net_of_tax=float(
-                data.get("comprehensiveIncomeNetOfTax", 0)),
-            ebit=float(
-                data.get("ebit", 0)),
-            ebitda=float(
-                data.get("ebitda", 0)),
-            net_income=float(
-                data.get("netIncome", 0)),
+            net_income_from_continuing_operations=net_income_from_continuing_operations,
+            comprehensive_income_net_of_tax=comprehensive_income_net_of_tax,
+            ebit=ebit,
+            ebitda=ebitda,
+            net_income=net_income,
             non_interest_income=non_interest_income,
             other_non_operating_income=other_non_operating_income)
 
