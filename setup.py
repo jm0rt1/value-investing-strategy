@@ -13,6 +13,8 @@ if sys.platform == "win32":
 setup(
     name="value_investing_strategy",
     version="0.1",
+    packages=find_packages(),
+    package_data={'value_investing_strategy': ['scripts/*']},
     description="",
     install_requires=open('requirements.txt').readlines(),
     author="James Mortensen",
