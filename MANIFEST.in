@@ -1,0 +1,2 @@
+include scripts/SimpleAlphaVantageCacher/output/json_cache/*.txt
+include scripts/SimpleAlphaVantageCacher/output/json_cache/DATA.json
