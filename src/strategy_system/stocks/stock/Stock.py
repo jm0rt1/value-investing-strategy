@@ -11,7 +11,7 @@ from src.strategy_system.stocks.stock.components.CompanyOverview import CompanyO
 
 
 PATH_TO_STOCK_DATA = Path(
-    "./scripts/SimpleAlphaVantageCacher/output/json_cache/DATA")
+    "./src/data/SimpleAlphaVantageCacher/output/json_cache/DATA")
 
 
 @dataclass
