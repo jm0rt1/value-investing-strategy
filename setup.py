@@ -1,5 +1,5 @@
 import sys
-from setuptools import setup
+from setuptools import setup,find_packages()
 
 # Dependencies are automatically detected, but it might need fine tuning.
 # "packages": ["os"] is used as example only
