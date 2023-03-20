@@ -1,6 +1,6 @@
 import unittest
 
-from src.strategy_system.stocks.stock.components.CompanyOverview import CompanyOverview
+from value_investing_strategy.strategy_system.stocks.stock.components.CompanyOverview import CompanyOverview
 DATA = {
     "Symbol": "AAPL",
     "AssetType": "Common Stock",

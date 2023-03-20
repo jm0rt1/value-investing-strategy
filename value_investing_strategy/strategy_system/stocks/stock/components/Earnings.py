@@ -2,7 +2,7 @@
 
 from pathlib import Path
 from typing import Optional, Union
-from src.strategy_system.stocks.stock.components.StockComponent import StockComponent
+from value_investing_strategy.strategy_system.stocks.stock.components.StockComponent import StockComponent
 
 
 from dataclasses import dataclass

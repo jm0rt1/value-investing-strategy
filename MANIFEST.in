@@ -1,0 +1,2 @@
+include value_investing_strategy/data/SimpleAlphaVantageCacher/output/json_cache/*.txt
+include value_investing_strategy/data/SimpleAlphaVantageCacher/output/json_cache/DATA.json

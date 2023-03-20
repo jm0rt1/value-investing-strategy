@@ -1,7 +1,7 @@
 
 import logging
 import logging.handlers
-from src.shared.settings import GlobalSettings
+from value_investing_strategy.shared.settings import GlobalSettings
 
 
 def initialize_logging():
