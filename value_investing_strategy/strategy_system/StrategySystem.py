@@ -10,8 +10,7 @@ def get_data_path():
     module_dir = os.path.dirname(__file__)
     parent_dir = os.path.dirname(module_dir)
     grandparent_dir = os.path.dirname(parent_dir)
-    great_grandparent_dir = os.path.dirname(grandparent_dir)
-    result = Path(os.path.join(great_grandparent_dir, "data/SimpleAlphaVantageCacher/output/json_cache/DATA"))
+    result = Path(os.path.join(grandparent_dir, "data/SimpleAlphaVantageCacher/output/json_cache/DATA"))
     return result
 
 class StrategySystemError(Exception):
