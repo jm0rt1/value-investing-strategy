@@ -26,5 +26,6 @@ class StocksInUse:
         with open(cache_file, "r") as fp:
             lines = fp.readlines()
             print(lines)
+            print("\n")
         lines: list[str] = [line.strip() for line in lines]
         return lines
