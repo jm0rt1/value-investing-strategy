@@ -9,7 +9,7 @@ from value_investing_strategy.strategy_system.stocks.StocksInUse import StocksIn
 def get_data_path():
     module_dir = os.path.dirname(__file__)
     parent_dir = os.path.dirname(module_dir)
-    result = Path(os.path.join(parent_dir, "data/SimpleAlphaVantageCacher/output/json_cache/DATA"))
+    result = Path(os.path.join(parent_dir, "data/SimpleAlphaVantageCacher/output/json_cache/DATA/covered.txt"))
     return result
 
 class StrategySystemError(Exception):
