@@ -1,3 +1,5 @@
+import os
+
 from dataclasses import dataclass
 import math
 from pathlib import Path
@@ -8,9 +10,19 @@ from value_investing_strategy.strategy_system.stocks.stock.components.CashFlow i
 from value_investing_strategy.strategy_system.stocks.stock.components.CompanyOverview import CompanyOverview
 
 
-PATH_TO_STOCK_DATA = Path(
-    "./value_investing_strategy/data/SimpleAlphaVantageCacher/output/json_cache/DATA"
-)
+def get_valid_path():
+
+    default_path = "./value_investing_strategy/data/SimpleAlphaVantageCacher/output/json_cache/DATA"
+
+    if os.path.exists(default_path):
+        return Path(default_path)
+    else:
+        module_dir = os.path.dirname(__file__)
+        parent_dir = os.path.dirname(module_dir)
+        grandparent_dir = os.path.dirname(parent_dir)
+        return Path(os.path.join(grandparent_dir, "data/SimpleAlphaVantageCacher/output/json_cache/DATA"))
+
+PATH_TO_STOCK_DATA = get_valid_path()
 
 
 @dataclass
