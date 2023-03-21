@@ -1,5 +1,3 @@
-import os
-
 from dataclasses import dataclass
 import math
 from pathlib import Path
@@ -10,10 +8,9 @@ from value_investing_strategy.strategy_system.stocks.stock.components.CashFlow i
 from value_investing_strategy.strategy_system.stocks.stock.components.CompanyOverview import CompanyOverview
 
 
-module_path = os.path.dirname(__file__)
-data_file_path = os.path.join(module_path, 'data/SimpleAlphaVantageCacher/output/json_cache/DATA')
-
-PATH_TO_STOCK_DATA = Path(data_file_path)
+PATH_TO_STOCK_DATA = Path(
+    "./value_investing_strategy/data/SimpleAlphaVantageCacher/output/json_cache/DATA"
+)
 
 
 @dataclass
