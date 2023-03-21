@@ -92,7 +92,7 @@ class StrategySystem(StrategyInterface):
             return StocksInUse.list_cached_tickers(
                 PATH_TO_STOCK_DATA.parent/"covered.txt")
         except FileNotFoundError:
-            StocksInUse.list_cached_tickers(get_data_path())
+            return StocksInUse.list_cached_tickers(get_data_path())
             
 
     @staticmethod
