@@ -25,6 +25,6 @@ class StocksInUse:
     def list_cached_tickers(cache_file: Path) -> list[str]:
         with open(cache_file, "r") as fp:
             lines = fp.readlines()
-
+            print(lines)
         lines: list[str] = [line.strip() for line in lines]
         return lines
