@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import unittest
-from src.strategy_system.stocks.stock.Stock import Stock, GrahamNumberCalculator
+from value_investing_strategy.strategy_system.stocks.stock.Stock import Stock, GrahamNumberCalculator
 
 
 class TestGrahamNumberCalculator(unittest.TestCase):

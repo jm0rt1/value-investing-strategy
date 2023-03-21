@@ -3,15 +3,15 @@
 from dataclasses import dataclass
 import math
 from pathlib import Path
-from src.strategy_system.stocks.stock.components.IncomeStatement import IncomeStatement
-from src.strategy_system.stocks.stock.components.Earnings import EarningsStatement
-from src.strategy_system.stocks.stock.components.BalanceSheet import BalanceSheet
-from src.strategy_system.stocks.stock.components.CashFlow import Cashflow
-from src.strategy_system.stocks.stock.components.CompanyOverview import CompanyOverview
+from value_investing_strategy.strategy_system.stocks.stock.components.IncomeStatement import IncomeStatement
+from value_investing_strategy.strategy_system.stocks.stock.components.Earnings import EarningsStatement
+from value_investing_strategy.strategy_system.stocks.stock.components.BalanceSheet import BalanceSheet
+from value_investing_strategy.strategy_system.stocks.stock.components.CashFlow import Cashflow
+from value_investing_strategy.strategy_system.stocks.stock.components.CompanyOverview import CompanyOverview
 
 
 PATH_TO_STOCK_DATA = Path(
-    "./scripts/SimpleAlphaVantageCacher/output/json_cache/DATA")
+    "./src/data/SimpleAlphaVantageCacher/output/json_cache/DATA")
 
 
 @dataclass
