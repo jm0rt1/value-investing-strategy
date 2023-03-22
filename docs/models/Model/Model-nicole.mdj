@@ -32900,28 +32900,6 @@
 													}
 												},
 												{
-													"_type": "EllipseView",
-													"_id": "AAAAAAGHBnuM1JDE+VA=",
-													"_parent": {
-														"$ref": "AAAAAAGHBnjzdY9Xsbo="
-													},
-													"font": "Arial;13;0",
-													"left": 192,
-													"top": 48,
-													"width": 33,
-													"height": 33
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBnvIMJDJlW0=",
-													"_parent": {
-														"$ref": "AAAAAAGHBnjzdY9Xsbo="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "200:104;200:104"
-												},
-												{
 													"_type": "FreelineEdgeView",
 													"_id": "AAAAAAGHBnw855DSJCo=",
 													"_parent": {
@@ -32930,66 +32908,6 @@
 													"font": "Arial;13;0",
 													"lineStyle": 1,
 													"points": "512:104;512:104"
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBnxYWpDVWQc=",
-													"_parent": {
-														"$ref": "AAAAAAGHBnjzdY9Xsbo="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "208:80;208:143"
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBnzCFJDeiiE=",
-													"_parent": {
-														"$ref": "AAAAAAGHBnjzdY9Xsbo="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "208:144;184:160"
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBnzSbJDhu3c=",
-													"_parent": {
-														"$ref": "AAAAAAGHBnjzdY9Xsbo="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "208:144;232:160"
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBn0GWJDovd0=",
-													"_parent": {
-														"$ref": "AAAAAAGHBnjzdY9Xsbo="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "208:88;190:107"
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBn0l9JDtRVQ=",
-													"_parent": {
-														"$ref": "AAAAAAGHBnjzdY9Xsbo="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "216:112;216:112"
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBn03WpDwFco=",
-													"_parent": {
-														"$ref": "AAAAAAGHBnjzdY9Xsbo="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "208:88;224:106"
 												},
 												{
 													"_type": "UMLSeqLifelineView",
@@ -34310,68 +34228,6 @@
 													}
 												},
 												{
-													"_type": "EllipseView",
-													"_id": "AAAAAAGHBotaH5XicpI=",
-													"_parent": {
-														"$ref": "AAAAAAGHBoksZZSFNM0="
-													},
-													"font": "Arial;13;0",
-													"left": 176,
-													"top": 24,
-													"width": 33,
-													"height": 33
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBotyIJXlYQ0=",
-													"_parent": {
-														"$ref": "AAAAAAGHBoksZZSFNM0="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "192:56;192:112"
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBovFAJXx10Y=",
-													"_parent": {
-														"$ref": "AAAAAAGHBoksZZSFNM0="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "192:72;173:88"
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBovO4pX06R0=",
-													"_parent": {
-														"$ref": "AAAAAAGHBoksZZSFNM0="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "192:72;210:87"
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBovZEJX3FG4=",
-													"_parent": {
-														"$ref": "AAAAAAGHBoksZZSFNM0="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "192:112;176:128"
-												},
-												{
-													"_type": "FreelineEdgeView",
-													"_id": "AAAAAAGHBovhbJX6LUg=",
-													"_parent": {
-														"$ref": "AAAAAAGHBoksZZSFNM0="
-													},
-													"font": "Arial;13;0",
-													"lineStyle": 1,
-													"points": "192:112;208:128"
-												},
-												{
 													"_type": "UMLSeqMessageView",
 													"_id": "AAAAAAGHBoxnX5YHtV4=",
 													"_parent": {
@@ -35177,7 +35033,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGG+i9Ki/RA7wA="
 									},
-									"name": "Role1"
+									"name": "Role1",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -35185,7 +35042,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGG+i9Ki/RA7wA="
 									},
-									"name": "Role2"
+									"name": "Role2",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -35193,7 +35051,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGG+i9Ki/RA7wA="
 									},
-									"name": "Role3"
+									"name": "Role3",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -35201,7 +35060,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGG+i9Ki/RA7wA="
 									},
-									"name": "Role4"
+									"name": "Role4",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -35209,7 +35069,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGG+i9Ki/RA7wA="
 									},
-									"name": "Role5"
+									"name": "Role5",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -35217,7 +35078,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGG+i9Ki/RA7wA="
 									},
-									"name": "Role6"
+									"name": "Role6",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -35225,7 +35087,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGG+i9Ki/RA7wA="
 									},
-									"name": "Role7"
+									"name": "Role7",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -35233,7 +35096,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGG+i9Ki/RA7wA="
 									},
-									"name": "Role8"
+									"name": "Role8",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -35241,7 +35105,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGG+i9Ki/RA7wA="
 									},
-									"name": "Role9"
+									"name": "Role9",
+									"type": ""
 								},
 								{
 									"_type": "UMLAttribute",
@@ -35249,7 +35114,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGG+i9Ki/RA7wA="
 									},
-									"name": "Role10"
+									"name": "Role10",
+									"type": ""
 								}
 							],
 							"operations": [
@@ -35944,7 +35810,7 @@
 											"font": "Arial;13;0",
 											"left": 789.5,
 											"top": 164.5,
-											"width": 103.919921875,
+											"width": 103,
 											"height": 25,
 											"stereotypeLabel": {
 												"$ref": "AAAAAAGG+hOFi3EVMwY="
@@ -38387,7 +38253,7 @@
 											"font": "Arial;13;0",
 											"left": 716,
 											"top": 863.5,
-											"width": 173.2744140625,
+											"width": 173,
 											"height": 25,
 											"stereotypeLabel": {
 												"$ref": "AAAAAAGG+hOFjHGEgIc="
@@ -38690,7 +38556,7 @@
 											"font": "Arial;13;0",
 											"left": 763,
 											"top": 923,
-											"width": 323.50439453125,
+											"width": 323,
 											"height": 25,
 											"stereotypeLabel": {
 												"$ref": "AAAAAAGG+hOFjHGPgr8="
@@ -38959,7 +38825,7 @@
 											"font": "Arial;13;0",
 											"left": 805,
 											"top": 423,
-											"width": 176.86083984375,
+											"width": 176,
 											"height": 25,
 											"stereotypeLabel": {
 												"$ref": "AAAAAAGG+hOFjHGagfE="
@@ -39798,7 +39664,7 @@
 											"font": "Arial;13;0",
 											"left": 769.5,
 											"top": 519.5,
-											"width": 277.2490234375,
+											"width": 277,
 											"height": 25,
 											"stereotypeLabel": {
 												"$ref": "AAAAAAGG+hOFjHG777w="
@@ -43157,7 +43023,7 @@
 											"font": "Arial;13;0",
 											"left": 779,
 											"top": 988.5,
-											"width": 206.5234375,
+											"width": 206,
 											"height": 25,
 											"stereotypeLabel": {
 												"$ref": "AAAAAAGG+4ZldfkwxiU="
@@ -43426,7 +43292,7 @@
 											"font": "Arial;13;0",
 											"left": 749.5,
 											"top": 1036.5,
-											"width": 257.04443359375,
+											"width": 256,
 											"height": 25,
 											"stereotypeLabel": {
 												"$ref": "AAAAAAGG+4aI3QUvCOA="
@@ -43695,7 +43561,7 @@
 											"font": "Arial;13;0",
 											"left": 730.5,
 											"top": 1100.5,
-											"width": 282.38427734375,
+											"width": 282,
 											"height": 25,
 											"stereotypeLabel": {
 												"$ref": "AAAAAAGG+4aWJAZ0T2g="
@@ -43964,7 +43830,7 @@
 											"font": "Arial;13;0",
 											"left": 790.5,
 											"top": 1156.5,
-											"width": 145.8271484375,
+											"width": 145,
 											"height": 25,
 											"stereotypeLabel": {
 												"$ref": "AAAAAAGG+4afQQfm/dM="
@@ -47976,9 +47842,9 @@
 																"$ref": "AAAAAAGG+kNDhf09TDc="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 97.0908203125,
+															"width": 86.57275390625,
 															"height": 13,
 															"text": "Compare Stocks"
 														},
@@ -47991,7 +47857,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -48712,9 +48578,9 @@
 																"$ref": "AAAAAAGG+ljNqP+vE5c="
 															},
 															"font": "Arial;13;0",
-															"left": 595.578125,
+															"left": 594.11181640625,
 															"top": 197,
-															"width": 8.22998046875,
+															"width": 7.5,
 															"height": 13,
 															"text": "n"
 														},
@@ -48727,7 +48593,7 @@
 															"font": "Arial;13;1",
 															"left": 565,
 															"top": 197,
-															"width": 25.578125,
+															"width": 24.11181640625,
 															"height": 13,
 															"text": "loop"
 														},
@@ -49633,9 +49499,9 @@
 																"$ref": "AAAAAAGG+isdp+zSjpU="
 															},
 															"font": "Arial;13;0",
-															"left": 48.72998046875,
+															"left": 46.55908203125,
 															"top": 13,
-															"width": 155.6162109375,
+															"width": 141.0546875,
 															"height": 13,
 															"text": "Calculate Graham Number"
 														},
@@ -49648,7 +49514,7 @@
 															"font": "Arial;13;1",
 															"left": 29,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -51055,9 +50921,9 @@
 																"$ref": "AAAAAAGG+2+ofVTMTzE="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 289.35498046875,
+															"width": 267.06201171875,
 															"height": 13,
 															"text": "Calculate book value dividend projection valuation"
 														},
@@ -51070,7 +50936,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -52516,9 +52382,9 @@
 																"$ref": "AAAAAAGG+5U4JnxIu8o="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 115.9052734375,
+															"width": 102.791015625,
 															"height": 13,
 															"text": "SequenceDiagram1"
 														},
@@ -52531,7 +52397,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -52622,9 +52488,9 @@
 																"$ref": "AAAAAAGG+5RYuniMPzo="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 101.45166015625,
+															"width": 97.0400390625,
 															"height": 13,
 															"text": "Add new portfolio"
 														},
@@ -52637,7 +52503,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -55641,9 +55507,9 @@
 																"$ref": "AAAAAAGG+5UpnXurjpg="
 															},
 															"font": "Arial;13;0",
-															"left": 24.72998046875,
+															"left": 22.55908203125,
 															"top": 13,
-															"width": 113.01708984375,
+															"width": 103.87646484375,
 															"height": 13,
 															"text": "Rebalance portfolio"
 														},
@@ -55656,7 +55522,7 @@
 															"font": "Arial;13;1",
 															"left": 5,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -57341,9 +57207,9 @@
 																"$ref": "AAAAAAGG+5UK0npxKLo="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 246.67333984375,
+															"width": 228.46826171875,
 															"height": 13,
 															"text": "Perform Fundamental Analysis on portfolio"
 														},
@@ -57356,7 +57222,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -57420,9 +57286,9 @@
 																"$ref": "AAAAAAGG+5UbkHsOEC0="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 245.232421875,
+															"width": 224.85009765625,
 															"height": 13,
 															"text": "Perform Fundamental analysis on portfolio"
 														},
@@ -57435,7 +57301,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -57499,9 +57365,9 @@
 																"$ref": "AAAAAAGG+4ObQcUpGl4="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 184.5615234375,
+															"width": 163.0810546875,
 															"height": 13,
 															"text": "Calculate asset based valuation"
 														},
@@ -57514,7 +57380,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -58906,9 +58772,9 @@
 																"$ref": "AAAAAAGG+4OmiccuGZU="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 251.732421875,
+															"width": 231.31201171875,
 															"height": 13,
 															"text": "Calculate financial metric analysis valuation"
 														},
@@ -58921,7 +58787,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -60313,9 +60179,9 @@
 																"$ref": "AAAAAAGG+4O2pMwoycc="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 115.9052734375,
+															"width": 102.791015625,
 															"height": 13,
 															"text": "SequenceDiagram1"
 														},
@@ -60328,7 +60194,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
@@ -61720,9 +61586,9 @@
 																"$ref": "AAAAAAGG+4X/684ih00="
 															},
 															"font": "Arial;13;0",
-															"left": 32.72998046875,
+															"left": 30.55908203125,
 															"top": 13,
-															"width": 127.4580078125,
+															"width": 114.33740234375,
 															"height": 13,
 															"text": "Calculate sharpe ratio"
 														},
@@ -61735,7 +61601,7 @@
 															"font": "Arial;13;1",
 															"left": 13,
 															"top": 13,
-															"width": 14.72998046875,
+															"width": 12.55908203125,
 															"height": 13,
 															"text": "sd"
 														}
