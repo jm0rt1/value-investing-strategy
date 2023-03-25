@@ -11,7 +11,7 @@ from value_investing_strategy.strategy_system.stocks.stock.components.CompanyOve
 
 
 PATH_TO_STOCK_DATA = Path(
-    "./src/data/SimpleAlphaVantageCacher/output/json_cache/DATA")
+    "./value_investing_strategy/data/SimpleAlphaVantageCacher/output/json_cache/DATA")
 
 
 @dataclass

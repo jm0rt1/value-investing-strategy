@@ -11,6 +11,6 @@ class TestGrahamNumberCalculator(unittest.TestCase):
         GrahamNumberCalculator(stock)
 
     def test_calculate(self):
-        expected = 1
+        expected = 229.46
         out = GrahamNumberCalculator.calculate(45, 52)
         self.assertEqual(expected, out)

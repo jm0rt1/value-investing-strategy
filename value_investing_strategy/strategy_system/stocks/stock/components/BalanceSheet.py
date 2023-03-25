@@ -84,7 +84,7 @@ class BalanceReport():
 
         try:
             inventory = float(data.get(
-                "deferredRevenue", ""))
+                "inventory", ""))
         except ValueError as _:
             inventory = 0
         try:

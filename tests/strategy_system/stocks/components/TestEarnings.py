@@ -78,6 +78,6 @@ class TestEarningsStatement(unittest.TestCase):
 
     def test_all_cached(self):
         tickers = StocksInUse.list_cached_tickers(
-            Path("src/data/SimpleAlphaVantageCacher/output/json_cache/covered.txt"))
+            Path("value_investing_strategy/data/SimpleAlphaVantageCacher/output/json_cache/covered.txt"))
 
         pass
