@@ -1,9 +1,16 @@
+import os
 
-
+from pathlib import Path
 from value_investing_strategy.strategy_system.StrategyInterface import StrategyInterface
 from value_investing_strategy.strategy_system.stocks.stock.Stock import Stock, PATH_TO_STOCK_DATA
 from value_investing_strategy.strategy_system.stocks.StocksInUse import StocksInUse
 
+
+def get_data_path():
+    module_dir = os.path.dirname(__file__)
+    parent_dir = os.path.dirname(module_dir)
+    result = Path(os.path.join(parent_dir, "data/SimpleAlphaVantageCacher/output/json_cache/covered.txt"))
+    return result
 
 class StrategySystemError(Exception):
     pass
@@ -80,8 +87,13 @@ class StrategySystem(StrategyInterface):
 
     @staticmethod
     def get_available_stocks() -> list[str]:
-        return StocksInUse.list_cached_tickers(
-            PATH_TO_STOCK_DATA.parent/"covered.txt")
+
+        try:
+            return StocksInUse.list_cached_tickers(
+                PATH_TO_STOCK_DATA.parent/"covered.txt")
+        except FileNotFoundError:
+            return StocksInUse.list_cached_tickers(get_data_path())
+            
 
     @staticmethod
     def get_stock(ticker: str):
